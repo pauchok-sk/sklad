@@ -9,10 +9,12 @@
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/title";
 @import "./ui/text";
 @import "./ui/form-search";
 @import "./ui/colors";
 @import "./ui/dropdown";
+@import "./ui/slider";
 
 // widgets
 @import "./widgets/burger";
@@ -22,5 +24,6 @@
 @import "./components/header";
 
 @import "./components/intro";
+@import "./components/s-conditions";
 
 @import "./components/footer";

@@ -6,3 +6,23 @@
   padding: 0;
   color: inherit;
 }
+
+.btn-s {
+  @include flex-center;
+  cursor: pointer;
+  border: none;
+  padding: 15px 30px;
+  width: fit-content;
+  background-color: var(--primary);
+  border-radius: 24px;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+
+  transition: opacity .2s ease;
+  @include hover {
+    opacity: 0.8;
+  }
+}

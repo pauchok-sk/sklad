@@ -1,1 +1,19 @@
+.s-title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
 
+  @include laptop-min {
+    font-size: 28px;
+  }
+  @include tablet {
+    font-size: 24px;
+  }
+
+  span {
+    color: var(--primary);
+  }
+}

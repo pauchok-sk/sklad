@@ -1,0 +1,133 @@
+.intro {
+  padding-top: 81px;
+  @include laptop-min {
+    padding-top: 0;
+  }
+  &__slider {
+  }
+  &__slide {
+    color: white;
+    padding: 95px 0px 35px 0px !important;
+    box-sizing: border-box;
+    @include laptop-min {
+      padding: 30px 0px 85px 0px  !important;
+    }
+  }
+  &__slide-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex: 1;
+
+    @include laptop-min {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+  &__slide-info {
+  }
+  &__slide-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 133%;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+
+    @include laptop-middle {
+      font-size: 42px;
+    }
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 125%;
+    }
+  }
+  &__slide-content {
+    font-size: 24px;
+    line-height: 133%;
+    margin: 0px 0px 40px 0px;
+
+    @include laptop-middle {
+      font-size: 20px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 133%;
+      margin-bottom: 24px;
+    }
+  }
+  &__slide-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-size: 16px;
+      line-height: 125%;
+
+      @include laptop-middle {
+        font-size: 14px;
+      }
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 123%;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        color: var(--primary);
+      }
+    }
+  }
+  &__slide-btn {
+    width: 260px;
+    max-width: 100%;
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__slide-img {
+    display: block;
+    width: calc(50% - 10px);
+    @include laptop-min {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+  &__slider-pagination {
+    --container-width: 1200px;
+    position: absolute;
+    bottom: 20px !important;
+    left: auto !important;
+    right: calc((100vw - var(--container-width)) / 2);
+    z-index: 10;
+
+    @include laptop {
+      --container-width: 1140px;
+    }
+    @include laptop-middle {
+      --container-width: 960px;
+    }
+    @include laptop-min {
+      right: 50% !important;
+      transform: translateX(50%);
+    }
+  }
+}
