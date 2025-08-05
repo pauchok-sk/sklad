@@ -1,5 +1,14 @@
-<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" fill="none" id="icon-burger" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-next" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-prev" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-burger" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 17H21M3 12H21M3 7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9999 19.9999L12 12M12 12L4 4M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-location" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.33337 6.61523C3.33337 9.84978 6.16302 12.5246 7.4155 13.5501C7.59475 13.6969 7.68545 13.7712 7.81918 13.8088C7.92331 13.8381 8.07657 13.8381 8.1807 13.8088C8.31469 13.7711 8.40475 13.6976 8.58468 13.5502C9.83715 12.5247 12.6667 9.85008 12.6667 6.61553C12.6667 5.39145 12.175 4.21737 11.2998 3.35181C10.4247 2.48626 9.23777 2 8.00009 2C6.76242 2 5.57538 2.48634 4.70021 3.35189C3.82504 4.21744 3.33337 5.39116 3.33337 6.61523Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.66671 6C6.66671 6.73638 7.26366 7.33333 8.00004 7.33333C8.73642 7.33333 9.33337 6.73638 9.33337 6C9.33337 5.26362 8.73642 4.66667 8.00004 4.66667C7.26366 4.66667 6.66671 5.26362 6.66671 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-search" xmlns="http://www.w3.org/2000/svg">
 <path d="M10 10L14 14M6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-tel" xmlns="http://www.w3.org/2000/svg">

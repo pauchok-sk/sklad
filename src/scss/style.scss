@@ -12,10 +12,15 @@
 @import "./ui/text";
 @import "./ui/form-search";
 @import "./ui/colors";
+@import "./ui/dropdown";
+
+// widgets
+@import "./widgets/burger";
+@import "./widgets/fixed-search";
 
 // components
 @import "./components/header";
 
-
+@import "./components/intro";
 
 @import "./components/footer";
