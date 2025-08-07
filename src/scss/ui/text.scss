@@ -20,6 +20,32 @@
   line-height: 16px;
 }
 
+.text-h1 {
+  font-size: 60px;
+  line-height: 133%;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+
+  @include laptop-middle {
+    font-size: 42px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  small {
+    font-size: 36px;
+    line-height: 125%;
+    @include laptop-middle {
+      font-size: 32px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+}
 .text-h3 {
   font-size: 20px;
   line-height: 160%;

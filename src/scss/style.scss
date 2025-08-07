@@ -17,6 +17,8 @@
 @import "./ui/slider";
 @import "./ui/tab";
 @import "./ui/form";
+@import "./ui/breadcrumbs";
+@import "./ui/select";
 
 // widgets
 @import "./widgets/burger";
@@ -35,5 +37,8 @@
 @import "./components/s-clients";
 @import "./components/s-reviews";
 @import "./components/s-contacts";
+@import "./components/intro-simple";
+@import "./components/s-service-spec";
+@import "./components/s-catalog";
 
 @import "./components/footer";

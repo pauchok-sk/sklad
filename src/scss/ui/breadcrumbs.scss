@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @include tablet {
+    
+  }
+
+  a, span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px;
+    line-height: 123%;
+
+    &:not(:first-child) {
+      &::before {
+        content: "/";
+      }
+    }
+  }
+
+  a {
+    transition: color .3s ease;
+    @include hover {
+      color: var(--light);
+    }
+  }
+
+  span {
+    color: var(--light);
+  }
+}

@@ -275,6 +275,16 @@ body {
   font-size: 22px;
   line-height: 16px
 }
+.text-h1 {
+  font-size: 60px;
+  line-height: 133%;
+  text-transform: uppercase;
+  margin: 0 0 10px 0
+}
+.text-h1 small {
+  font-size: 36px;
+  line-height: 125%
+}
 .text-h3 {
   font-size: 20px;
   line-height: 160%;
@@ -331,11 +341,14 @@ body {
 .text-light {
   color: var(--light)!important
 }
-.bg-light {
-  background-color: var(--light-bg)!important
-}
 .text-primary {
   color: var(--primary)!important
+}
+.bg-primary {
+  background-color: var(--primary)!important
+}
+.bg-light {
+  background-color: var(--light-bg)!important
 }
 .dropdown {
   position: relative
@@ -473,6 +486,35 @@ textarea.input {
   color: var(--primary);
   transition: color .3s ease
 }
+.input-check {
+  display: none
+}
+.input-check:checked+label::before {
+  border-color: var(--primary);
+  background: url(../img/check.svg) center/70% auto no-repeat;
+  background-color: var(--primary)
+}
+.label-check {
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+  gap: 10px
+}
+.label-check::before {
+  content: "";
+  display: block;
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--stroke);
+  border-radius: 7px;
+  transition: border-color .3s ease,background-color .3s ease
+}
+.label-check a {
+  color: var(--primary);
+  transition: color .3s ease
+}
 .input-file {
   display: none
 }
@@ -487,6 +529,54 @@ textarea.input {
 .label-file svg {
   width: 20px;
   height: 20px
+}
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px
+}
+.breadcrumbs a,
+.breadcrumbs span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 123%
+}
+.breadcrumbs a:not(:first-child)::before,
+.breadcrumbs span:not(:first-child)::before {
+  content: "/"
+}
+.breadcrumbs a {
+  transition: color .3s ease
+}
+.breadcrumbs span {
+  color: var(--light)
+}
+.select {
+  position: relative;
+  width: 100%
+}
+.select__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 19px;
+  background-color: #fff;
+  border: 1px solid var(--stroke);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: border-color .3s ease
+}
+.select__btn svg {
+  width: 16px;
+  height: 16px;
+  color: var(--light);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease,-webkit-transform .3s ease
 }
 .burger {
   position: fixed;
@@ -1244,6 +1334,52 @@ textarea.input {
   overflow: hidden;
   margin-top: 20px
 }
+.intro-simple {
+  padding-top: 81px;
+  color: #fff
+}
+.intro-simple__wrapper {
+  display: flex;
+  gap: 25px;
+  padding: 95px 0 75px 0
+}
+.intro-simple__main {
+  padding-top: 25px;
+  flex: 0 1 580px
+}
+.intro-simple__content {
+  font-size: 24px;
+  line-height: 133%
+}
+.intro-simple__img {
+  display: block;
+  width: 570px;
+  flex-shrink: 0
+}
+.s-service-spec__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px
+}
+.s-service-spec__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #fff
+}
+.s-service-spec__item-icon {
+  display: block;
+  margin-bottom: 20px
+}
+.s-catalog__form {
+  display: flex;
+  gap: 20px
+}
+.s-catalog__form-item {
+  flex: 0 1 270px
+}
 .footer__main {
   padding: 38px 0
 }
@@ -1316,6 +1452,12 @@ textarea.input {
   .container {
     max-width: 960px
   }
+  .text-h1 {
+    font-size: 42px
+  }
+  .text-h1 small {
+    font-size: 32px
+  }
   .header__search-wrapper {
     flex-basis: 305px
   }
@@ -1333,6 +1475,9 @@ textarea.input {
   }
   .s-conditions__slide {
     padding: 30px
+  }
+  .intro-simple__img {
+    width: 490px
   }
   .footer__logo {
     width: 180px
@@ -1436,6 +1581,21 @@ textarea.input {
   .s-contacts__body-main {
     padding: 20px
   }
+  .intro-simple {
+    padding-top: 0
+  }
+  .intro-simple__wrapper {
+    padding: 20px 0 70px 0
+  }
+  .intro-simple__content {
+    font-size: 20px
+  }
+  .intro-simple__img {
+    width: 350px
+  }
+  .s-service-spec__grid {
+    grid-template-columns: 1fr
+  }
   .footer__main-wrapper {
     justify-content: start;
     flex-wrap: wrap
@@ -1450,6 +1610,13 @@ textarea.input {
     max-width: 540px
   }
   .s-title {
+    font-size: 24px
+  }
+  .text-h1 {
+    font-size: 32px;
+    line-height: 125%
+  }
+  .text-h1 small {
     font-size: 24px
   }
   .intro__slide-title {
@@ -1514,6 +1681,24 @@ textarea.input {
     padding: 17px 20px;
     font-size: 13px;
     line-height: 123%
+  }
+  .intro-simple__wrapper {
+    flex-wrap: wrap;
+    row-gap: 70px
+  }
+  .intro-simple__main {
+    flex: none;
+    width: 100%;
+    padding-top: 0
+  }
+  .intro-simple__content {
+    font-size: 18px
+  }
+  .intro-simple__img {
+    margin: 0 auto
+  }
+  .s-service-spec__item {
+    padding: 20px 20px 30px 20px
   }
 }
 @media (max-width:575px) {
@@ -1589,8 +1774,17 @@ textarea.input {
   .label-policy a:hover {
     color: var(--black)
   }
+  .label-check a:hover {
+    color: var(--black)
+  }
   .label-file:hover {
     color: var(--black)
+  }
+  .breadcrumbs a:hover {
+    color: var(--light)
+  }
+  .select__btn:hover {
+    border-color: var(--gray)
   }
   .burger__list a:hover {
     color: var(--primary)
@@ -1710,8 +1904,17 @@ textarea.input {
   .label-policy a:active {
     color: var(--black)
   }
+  .label-check a:active {
+    color: var(--black)
+  }
   .label-file:active {
     color: var(--black)
+  }
+  .breadcrumbs a:active {
+    color: var(--light)
+  }
+  .select__btn:active {
+    border-color: var(--gray)
   }
   .burger__list a:active {
     color: var(--primary)

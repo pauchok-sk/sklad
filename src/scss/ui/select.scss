@@ -1,0 +1,30 @@
+.select {
+  position: relative;
+  width: 100%;
+  &__btn {
+    @include flex-between;
+    gap: 10px;
+    padding: 8px 19px;
+    background-color: white;
+    border: 1px solid var(--stroke);
+    cursor: pointer;
+    border-radius: 20px;
+
+    transition: border-color .3s ease;
+
+    @include hover {
+      border-color: var(--gray);
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      color: var(--light);
+      transition: transform .3s ease;
+    }
+  }
+  &__body {
+  }
+  &__item {
+  }
+}

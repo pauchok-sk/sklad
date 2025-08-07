@@ -1,0 +1,53 @@
+.intro-simple {
+  padding-top: 81px;
+  color: white;
+  @include laptop-min {
+    padding-top: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 25px;
+    padding: 95px 0px 75px 0px;
+    @include laptop-min {
+      padding: 20px 0px 70px 0px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      row-gap: 70px;
+    }
+  }
+  &__main {
+    padding-top: 25px;
+    flex: 0 1 580px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 133%;
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 570px;
+    flex-shrink: 0;
+    @include laptop-middle {
+      width: 490px;
+    }
+    @include laptop-min {
+      width: 350px;
+    }
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+}

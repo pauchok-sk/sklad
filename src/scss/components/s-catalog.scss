@@ -1,0 +1,9 @@
+.s-catalog {
+  &__form {
+    display: flex;
+    gap: 20px;
+  }
+  &__form-item {
+    flex: 0 1 270px;
+  }
+}
