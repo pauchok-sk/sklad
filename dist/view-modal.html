@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap&_v=20250807143602" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250807143602" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250807143602" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250807143602" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250807143602" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="body _dark">
+		<main>
+
+			<section class="py-4">
+				<div class="container">
+					<div class="d-flex flex-wrap gap-3">
+						<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="btn-s">бесплатная консультация</button>
+						<button data-bs-toggle="modal" data-bs-target="#modal-get-price" class="btn-s">Узнать стоимость</button>
+						<button data-bs-toggle="modal" data-bs-target="#modal-buy" class="btn-s">Купить</button>
+						<button data-bs-toggle="modal" data-bs-target="#modal-order" class="btn-s">Купить</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<div class="modal fade" id="modal-consult">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<h3 class="text-h3 fw-bold text-uppercase text-primary mb-4 text-oswald">
+						бесплатная консультация
+					</h3>
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<form action="#" class="modal__form">
+						<div class="input-control mb-2">
+							<label for="consult-name" class="label-input text-13 mb-2">Имя</label>
+							<input type="text" placeholder="Иван Иванович Иванов" id="consult-name" class="input" />
+						</div>
+						<div class="input-control">
+							<label for="consult-tel" class="label-input text-13 mb-2">
+								Телефон
+							</label>
+							<input type="tel" placeholder="+7 (___) ___ __-__" id="consult-tel" class="input" />
+						</div>
+						<input type="checkbox" id="consult-policy" class="input-policy" />
+						<label for="consult-policy" class="text-13 label-policy my-4">
+							<span>
+								Нажимая на кнопку, я соглашаюсь с
+								<a href="#" target="_blank">Условиями использования</a>
+								и
+								<a href="#" target="_blank">Политикой конфиденциальности</a>
+							</span>
+						</label>
+						<button class="btn-s w-100">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-get-price">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+						Узнать стоимость
+					</h3>
+					<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<form action="#" class="modal__form">
+						<div class="input-control mb-2">
+							<label for="get-price-name" class="label-input text-13 mb-2">
+								Имя
+							</label>
+							<input type="text" placeholder="Иван Иванович Иванов" id="get-price-name" class="input" />
+						</div>
+						<div class="input-control">
+							<label for="get-price-tel" class="label-input text-13 mb-2">
+								Телефон
+							</label>
+							<input type="tel" placeholder="+7 (___) ___ __-__" id="get-price-tel" class="input" />
+						</div>
+						<input type="checkbox" id="get-price-policy" class="input-policy" />
+						<label for="get-price-policy" class="text-13 label-policy my-4">
+							<span>
+								Нажимая на кнопку, я соглашаюсь с
+								<a href="#" target="_blank">Условиями использования</a>
+								и
+								<a href="#" target="_blank">Политикой конфиденциальности</a>
+							</span>
+						</label>
+						<button class="btn-s w-100">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-buy">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+						Купить
+					</h3>
+					<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<form action="#" class="modal__form">
+						<div class="input-control mb-2">
+							<label for="buy-name" class="label-input text-13 mb-2">Имя</label>
+							<input type="text" placeholder="Иван Иванович Иванов" id="buy-name" class="input" />
+						</div>
+						<div class="input-control">
+							<label for="buy-tel" class="label-input text-13 mb-2">Телефон</label>
+							<input type="tel" placeholder="+7 (___) ___ __-__" id="buy-tel" class="input" />
+						</div>
+						<input type="checkbox" id="buy-policy" class="input-policy" />
+						<label for="buy-policy" class="text-13 label-policy my-4">
+							<span>
+								Нажимая на кнопку, я соглашаюсь с
+								<a href="#" target="_blank">Условиями использования</a>
+								и
+								<a href="#" target="_blank">Политикой конфиденциальности</a>
+							</span>
+						</label>
+						<button class="btn-s w-100">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-order">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+						оставить заявку
+					</h3>
+					<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<form action="#" class="modal__form">
+						<div class="input-control mb-2">
+							<label for="order-name" class="label-input text-13 mb-2">Имя</label>
+							<input type="text" placeholder="Иван Иванович Иванов" id="order-name" class="input" />
+						</div>
+						<div class="input-control mb-2">
+							<label for="order-tel" class="label-input text-13 mb-2">
+								Телефон
+							</label>
+							<input type="tel" placeholder="+7 (___) ___ __-__" id="order-tel" class="input" />
+						</div>
+						<div class="input-control mb-2">
+							<label for="order-conm" class="label-input text-13 mb-2">
+								Комментарий
+							</label>
+							<textarea id="order-comm" placeholder="Напишите ваш вопрос" rows="4" class="input"></textarea>
+						</div>
+						<input type="file" id="order-file" class="input-file" />
+						<label for="order-file" class="label-file text-13">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-attach"></use>
+							</svg>
+							<span>Прикрепить документ</span>
+						</label>
+						<input type="checkbox" id="order-policy" class="input-policy" />
+						<label for="order-policy" class="text-13 label-policy my-4">
+							<span>
+								Нажимая на кнопку, я соглашаюсь с
+								<a href="#" target="_blank">Условиями использования</a>
+								и
+								<a href="#" target="_blank">Политикой конфиденциальности</a>
+							</span>
+						</label>
+						<button class="btn-s w-100">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container"></div>
+		</footer>
+
+		<script src="./files/bootstrap/bootstrap.min.js?_v=20250807143602"></script>
+		<script src="./files/swiper/swiper.min.js?_v=20250807143602"></script>
+		<script src="./files/fancybox/fancybox.min.js?_v=20250807143602"></script>
+
+	</div>
+	<script src="./files/bootstrap/bootstrap.min.js?_v=20250807143602"></script>
+	<script src="js/app.min.js?_v=20250807143602"></script>
+</body>
+
+</html>

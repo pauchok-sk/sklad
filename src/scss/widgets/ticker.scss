@@ -1,0 +1,46 @@
+.ticker {
+  position: relative;
+  overflow: hidden;
+  @include hover {
+    .ticker-item {
+      animation-play-state: paused !important;
+    }
+  }
+
+  &._reverse {
+    .ticker-item {
+      animation: tickerAnimationReverse 4s linear infinite;
+    }
+    .ticker-wrapper {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.ticker-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.ticker-item {
+  animation: tickerAnimation 4s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes tickerAnimation {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes tickerAnimationReverse {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}

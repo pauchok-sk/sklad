@@ -17,14 +17,14 @@ export default function sliders() {
 
   const conditionsSlider = document.querySelector(".s-conditions__slider");
 
-  if (conditionsSlider) {
+  if (conditionsSlider && window.matchMedia("(max-width: 991px)").matches) {
     const swiper = new Swiper(conditionsSlider, {
       speed: 700,
       slidesPerView: "auto",
       spaceBetween: 20,
-      // autoplay: {
-      //   delay: 3200,
-      // },
+      autoplay: {
+        delay: 3200,
+      },
       pagination: {
         el: ".intro__slider-pagination",
         clickable: true,

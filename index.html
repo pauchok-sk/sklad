@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои сверстанные страницы</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(
+          180deg,
+          #d41316 33.76%,
+          #9e1c1f 52.17%,
+          #c05c5e 69.67%
+        );
+        color: #000;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: #d41316;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+      }
+
+      .pages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .page-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        border: 2px solid #d41316;
+      }
+
+      .page-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 110, 228, 0.3);
+      }
+
+      .page-card h2 {
+        color: #923133;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+
+      .page-card p {
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .page-link {
+        display: inline-block;
+        background-color: #d41316;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      .page-link:hover {
+        background-color: #ba0105;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+        padding: 20px;
+      }
+      @media (max-width: 991px) {
+        .pages-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 767px) {
+        .pages-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .container {
+          padding: 20px;
+        }
+        .page-card h2 {
+          font-size: 1.2rem;
+        }
+        body {
+          padding: 20px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Склад 38</h1>
+
+      <div class="pages-grid">
+        <div class="page-card">
+          <h2>Модальные окна</h2>
+          <a href="dist/view-modal.html" class="page-link">Перейти</a>
+        </div>
+        <div class="page-card">
+          <h2>Главная страница</h2>
+          <a href="dist/index.html" class="page-link">Перейти</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 f-group.by</footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.s-clients {
+  &__ticker-item {
+    width: 350px;
+    padding: 0 10px;
+    img {
+      width: 100%;
+    }
+    @include laptop-min {
+      width: 200px;
+    }
+    @include tablet {
+      width: 130px;
+    }
+  }
+}
