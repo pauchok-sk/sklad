@@ -842,7 +842,14 @@ textarea.input {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100
+  z-index: 100;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease,-webkit-transform .4s ease
+}
+.header-container._scroll {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%)
 }
 .header {
   padding: 10px 0;
@@ -954,9 +961,16 @@ textarea.input {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   visibility: hidden;
+  z-index: 100;
   transition: visibility .4s ease,opacity .4s ease,-webkit-transform .4s ease;
   transition: transform .4s ease,visibility .4s ease,opacity .4s ease;
   transition: transform .4s ease,visibility .4s ease,opacity .4s ease,-webkit-transform .4s ease
+}
+.header-sticky._scroll {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible
 }
 .header-sticky__wrapper {
   display: flex;

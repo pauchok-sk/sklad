@@ -13,6 +13,11 @@
   left: 0;
   right: 0;
   z-index: 100;
+  transition: transform .4s ease;
+  
+  &._scroll {
+    transform: translateY(-100%)
+  }
   @include laptop-min {
     position: sticky;
   }
@@ -20,6 +25,8 @@
 .header {
   padding: 10px 0px;
   background-color: white;
+
+
   &__wrapper {
     @include flex-between;
     gap: 30px;
@@ -182,7 +189,15 @@
   transform: translateY(-100%);
   visibility: hidden;
 
+  z-index: 100;
+
   transition: transform .4s ease, visibility .4s ease, opacity .4s ease;
+
+  &._scroll {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
 
   @include laptop-min {
     display: none;

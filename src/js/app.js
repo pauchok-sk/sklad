@@ -9,6 +9,7 @@ import technicMore from "./files/technicMore.js";
 import map from "./files/map.js";
 import tabs from "./files/tabs.js";
 import inputFile from "./files/inputFile.js";
+import headerScroll from "./files/headerScroll.js";
 
 spoller();
 burgerTabs();
@@ -20,14 +21,13 @@ technicMore();
 map();
 tabs();
 inputFile();
+headerScroll();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var myModal = new bootstrap.Modal(
-    document.getElementById("modal-order")
-  );
+  var myModal = new bootstrap.Modal(document.getElementById("modal-order"));
   // myModal.show();
 });
