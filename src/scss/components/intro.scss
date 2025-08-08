@@ -10,12 +10,18 @@
     padding: 95px 0px 35px 0px !important;
     box-sizing: border-box;
     @include laptop-min {
-      padding: 30px 0px 85px 0px  !important;
+      padding: 30px 0px 85px 0px !important;
+      height: auto !important;
+
+      .container {
+        display: flex !important;
+        flex-direction: column;
+        height: 100%;
+      }
     }
   }
   &__slide-wrapper {
     display: flex;
-    align-items: flex-end;
     gap: 20px;
     flex: 1;
 
@@ -108,7 +114,7 @@
     width: calc(50% - 10px);
     @include laptop-min {
       width: 500px;
-      margin: 0 auto;
+      margin: auto auto 0 auto;
     }
   }
   &__slider-pagination {

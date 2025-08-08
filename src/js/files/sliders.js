@@ -7,7 +7,6 @@ export default function sliders() {
       autoplay: {
         delay: 3500,
       },
-      autoHeight: true,
       pagination: {
         el: ".intro__slider-pagination",
         clickable: true,

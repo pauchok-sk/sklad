@@ -109,4 +109,33 @@
       margin-top: auto;
     }
   }
+  &__slide-all {
+    @include flex-center;
+    position: relative;
+    background-color: white;
+    width: 300px !important;
+    height: auto !important;
+    border-radius: 8px;
+    z-index: 1;
+
+    .btn-s {
+      width: 160px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--primary);
+      z-index: -1;
+    }
+  }
+  &__btn-more {
+    width: 240px;
+    margin: 40px auto 0px auto;
+    @include laptop-min {
+      display: none;
+    }
+  }
 }
