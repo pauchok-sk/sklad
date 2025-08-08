@@ -1,6 +1,20 @@
 .select {
   position: relative;
   width: 100%;
+
+  &._open {
+    .select {
+      &__btn {
+        border-color: var(--gray);
+      }
+      &__body {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
   &__btn {
     @include flex-between;
     gap: 10px;
@@ -10,7 +24,7 @@
     cursor: pointer;
     border-radius: 20px;
 
-    transition: border-color .3s ease;
+    transition: border-color 0.3s ease;
 
     @include hover {
       border-color: var(--gray);
@@ -20,11 +34,42 @@
       width: 16px;
       height: 16px;
       color: var(--light);
-      transition: transform .3s ease;
+      transition: transform 0.3s ease;
     }
   }
   &__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 2px;
+    border-radius: 20px;
+    padding: 15px 0px;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    z-index: 10;
+
+    transition: transform .4s ease, visibility .4s ease, opacity .4s ease;
   }
   &__item {
+    cursor: pointer;
+    padding: 14px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+  
+    transition: color .3s ease, background-color .3s ease;
+
+    @include hover {
+      background-color: var(--light-bg);
+    }
+    &._active {
+      color: var(--primary);
+      pointer-events: none;
+    }
   }
 }

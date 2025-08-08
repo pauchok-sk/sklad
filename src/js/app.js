@@ -10,6 +10,8 @@ import map from "./files/map.js";
 import tabs from "./files/tabs.js";
 import inputFile from "./files/inputFile.js";
 import headerScroll from "./files/headerScroll.js";
+import select from "./files/select.js";
+import productCard from "./files/productCard.js";
 
 spoller();
 burgerTabs();
@@ -22,6 +24,8 @@ map();
 tabs();
 inputFile();
 headerScroll();
+select();
+productCard();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,
