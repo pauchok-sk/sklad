@@ -12,6 +12,7 @@ import inputFile from "./files/inputFile.js";
 import headerScroll from "./files/headerScroll.js";
 import select from "./files/select.js";
 import productCard from "./files/productCard.js";
+import inputmask from "./files/inputmask.js";
 
 spoller();
 burgerTabs();
@@ -26,6 +27,7 @@ inputFile();
 headerScroll();
 select();
 productCard();
+inputmask();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,

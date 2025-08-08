@@ -114,13 +114,21 @@ textarea.input {
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  width: fit-content;
 
   color: var(--primary);
 
-  transition: color 0.2s ease;
+  transition: color 0.3s ease, opacity .3s ease;
 
   @include hover {
     color: var(--black);
+  }
+
+  &._white {
+    color: white;
+    @include hover {
+      color: var(--light);
+    }
   }
 
   svg {

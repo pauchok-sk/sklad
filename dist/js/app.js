@@ -301,6 +301,31 @@
                 }
             });
         }
+        const recServicesSlider = document.querySelector(".s-rec-services__slider");
+        if (recServicesSlider) {
+            new Swiper(recServicesSlider, {
+                speed: 700,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3500
+                },
+                pagination: {
+                    el: ".s-rec-services .slider-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".s-rec-services .slider-btn._prev",
+                    nextEl: ".s-rec-services .slider-btn._next"
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        }
     }
     function technicMore() {
         const sect = document.querySelector(".s-technic");
@@ -440,6 +465,18 @@
             }
         }
     }
+    function inputmask() {
+        const inputs = document.querySelectorAll('input[type="tel"]');
+        const im = new Inputmask("+7 (999) 999-99-99");
+        im.mask(inputs);
+        inputs.forEach(input => {
+            input.addEventListener("keydown", e => {
+                const value = e.target.value;
+                value.split("");
+                if (value.length === 0 && (e.key === "8" || e.key === "7")) e.preventDefault();
+            });
+        });
+    }
     spoller();
     burgerTabs();
     fixedSearch();
@@ -453,6 +490,7 @@
     headerScroll();
     select_select();
     productCard();
+    inputmask();
     Fancybox.bind("[data-fancybox]", {
         closeButton: true
     });

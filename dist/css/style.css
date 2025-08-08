@@ -362,6 +362,9 @@ body {
 .bg-light {
   background-color: var(--light-bg)!important
 }
+.bg-gray {
+  background-color: var(--gray)!important
+}
 .dropdown {
   position: relative
 }
@@ -433,6 +436,34 @@ body {
 }
 .slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1
+}
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--black-33);
+  color: #fff;
+  transition: background-color .3s ease,opacity .3s ease
+}
+.slider-btn.swiper-button-disabled {
+  pointer-events: none;
+  opacity: .7
+}
+.slider-btn._prev svg {
+  -webkit-transform: translateX(-1px);
+  transform: translateX(-1px)
+}
+.slider-btn._next svg {
+  -webkit-transform: translateX(1px);
+  transform: translateX(1px)
+}
+.slider-btn svg {
+  width: 20px;
+  height: 20px
 }
 [data-tab] {
   display: none;
@@ -534,8 +565,14 @@ textarea.input {
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: var(--primary);
-  transition: color .2s ease
+  transition: color .3s ease,opacity .3s ease
+}
+.label-file._white {
+  color: #fff
 }
 .label-file svg {
   width: 20px;
@@ -701,6 +738,36 @@ textarea.input {
 .card-product__btn {
   width: 100%;
   margin-top: 20px
+}
+.card-service {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  color: var(--black)
+}
+.card-service__img {
+  width: 100%;
+  aspect-ratio: 1/.8;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center
+}
+.card-service__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 16px;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary-33);
+  transition: color .3s ease,border-color .3s ease
+}
+.card-service__btn {
+  padding: 9px 19px!important
 }
 .burger {
   position: fixed;
@@ -1573,6 +1640,41 @@ textarea.input {
   gap: 20px;
   margin-top: 20px
 }
+.s-catalog__btn-more {
+  width: 340px;
+  max-width: 100%;
+  margin: 40px auto 0 auto;
+  padding: 9px 15px!important
+}
+.s-rec-services__slider .swiper-slide {
+  box-sizing: border-box
+}
+.s-content__wrapper {
+  max-width: 940px;
+  margin: 0 auto
+}
+.s-connect__main {
+  max-width: 520px
+}
+.s-connect__content {
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 20px
+}
+.s-connect__form {
+  max-width: 420px
+}
+.s-connect__form .label-policy a {
+  color: #fff
+}
+.s-connect__form .label-policy::before {
+  width: 24px;
+  height: 24px
+}
+.s-connect__btn {
+  padding: 9px!important;
+  width: 100%
+}
 .footer__main {
   padding: 38px 0
 }
@@ -1722,6 +1824,13 @@ textarea.input {
   .card-product__wrapper-list {
     display: none
   }
+  .card-service__btn {
+    font-size: 13px!important;
+    line-height: 9px!important;
+    padding: 11px!important;
+    width: 100%;
+    margin-top: 35px
+  }
   .header-container {
     position: sticky
   }
@@ -1833,6 +1942,29 @@ textarea.input {
   }
   .s-service-spec__grid {
     grid-template-columns: 1fr
+  }
+  .s-rec-services {
+    overflow: hidden
+  }
+  .s-rec-services__slider {
+    overflow: visible!important
+  }
+  .s-rec-services__slider .swiper-slide {
+    width: 300px!important
+  }
+  .s-connect {
+    background: var(--primary)!important
+  }
+  .s-connect__content {
+    font-size: 20px
+  }
+  .s-connect__form .input-policy:checked+label::before {
+    background: url(../img/check-red.svg) center/14px auto no-repeat;
+    background-color: #fff;
+    border-color: #fff
+  }
+  .s-connect__form .label-policy::before {
+    border-color: #fff
   }
   .footer__main-wrapper {
     justify-content: start;
@@ -1969,6 +2101,23 @@ textarea.input {
   .s-catalog__form-item {
     flex-basis: 100%
   }
+  .s-catalog__btn-more {
+    margin-top: 20px;
+    font-size: 13px!important;
+    line-height: 123%!important;
+    padding: 7px!important
+  }
+  .s-connect__main {
+    max-width: none
+  }
+  .s-connect__content {
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 30px
+  }
+  .s-connect__form {
+    max-width: none
+  }
 }
 @media (max-width:575px) {
   .modal .modal-content {
@@ -2064,6 +2213,9 @@ textarea.input {
   .slider-pagination .swiper-pagination-bullet:hover {
     opacity: 1
   }
+  .slider-btn:hover {
+    background-color: var(--black)
+  }
   .label-policy a:hover {
     color: var(--black)
   }
@@ -2073,6 +2225,9 @@ textarea.input {
   .label-file:hover {
     color: var(--black)
   }
+  .label-file._white:hover {
+    color: var(--light)
+  }
   .breadcrumbs a:hover {
     color: var(--light)
   }
@@ -2081,6 +2236,10 @@ textarea.input {
   }
   .select__item:hover {
     background-color: var(--light-bg)
+  }
+  .card-service__title:hover {
+    color: var(--black);
+    border-color: var(--black)
   }
   .burger__list a:hover {
     color: var(--primary)
@@ -2160,6 +2319,9 @@ textarea.input {
   .s-catalog__filters-btn:hover {
     color: var(--primary)
   }
+  .s-connect__form .label-policy a:hover {
+    text-decoration: underline
+  }
   .footer__list a:hover {
     color: var(--primary)
   }
@@ -2200,6 +2362,9 @@ textarea.input {
   .slider-pagination .swiper-pagination-bullet:active {
     opacity: 1
   }
+  .slider-btn:active {
+    background-color: var(--black)
+  }
   .label-policy a:active {
     color: var(--black)
   }
@@ -2209,6 +2374,9 @@ textarea.input {
   .label-file:active {
     color: var(--black)
   }
+  .label-file._white:active {
+    color: var(--light)
+  }
   .breadcrumbs a:active {
     color: var(--light)
   }
@@ -2217,6 +2385,10 @@ textarea.input {
   }
   .select__item:active {
     background-color: var(--light-bg)
+  }
+  .card-service__title:active {
+    color: var(--black);
+    border-color: var(--black)
   }
   .burger__list a:active {
     color: var(--primary)
@@ -2295,6 +2467,9 @@ textarea.input {
   }
   .s-catalog__filters-btn:active {
     color: var(--primary)
+  }
+  .s-connect__form .label-policy a:active {
+    text-decoration: underline
   }
   .footer__list a:active {
     color: var(--primary)

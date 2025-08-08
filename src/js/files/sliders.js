@@ -30,4 +30,30 @@ export default function sliders() {
       },
     });
   }
+  const recServicesSlider = document.querySelector(".s-rec-services__slider");
+
+  if (recServicesSlider) {
+    const swiper = new Swiper(recServicesSlider, {
+      speed: 700,
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      autoplay: {
+        delay: 3500,
+      },
+      pagination: {
+        el: ".s-rec-services .slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".s-rec-services .slider-btn._prev",
+        nextEl: ".s-rec-services .slider-btn._next",
+      },
+      breakpoints: {
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
 }

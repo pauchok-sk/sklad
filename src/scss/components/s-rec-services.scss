@@ -1,0 +1,16 @@
+.s-rec-services {
+  @include laptop-min {
+    overflow: hidden;
+  }
+  &__slider{
+    @include laptop-min {
+      overflow: visible !important;
+    }
+    .swiper-slide {
+      box-sizing: border-box;
+      @include laptop-min {
+        width: 300px !important;
+      }
+    }
+  }
+}

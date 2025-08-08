@@ -1,0 +1,41 @@
+.card-service {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  color: var(--black);
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/0.8;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__title {
+    display: block;
+    width: fit-content;
+    padding: 8px 0px;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 16px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary-33);
+
+    transition: color .3s ease, border-color .3s ease;
+
+    @include hover {
+      color: var(--black);
+      border-color: var(--black);
+    }
+  }
+  &__btn {
+    padding: 9px 19px !important;
+
+    @include laptop-min {
+      font-size: 13px !important;
+      line-height: 9px !important;
+      padding: 11px !important;
+      width: 100%;
+      margin-top: 35px;
+    }
+  }
+}

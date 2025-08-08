@@ -1,0 +1,61 @@
+.s-connect {
+  @include laptop-min {
+    background: var(--primary) !important;
+  }
+  &__main {
+    max-width: 520px;
+    @include tablet {
+      max-width: none;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 20px;
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+      line-height: 133%;
+      margin-bottom: 30px;
+    }
+  }
+  &__form {
+    max-width: 420px;
+    @include tablet {
+      max-width: none;
+    }
+    .input-policy {
+      @include laptop-min {
+        &:checked + label {
+          &::before {
+            background: url('@img/check-red.svg') center / 14px auto no-repeat;
+            background-color: white;
+            border-color: white;
+          }
+        }
+      }
+    }
+    .label-policy {
+      a {
+        color: white;
+        @include hover {
+          text-decoration: underline;
+        }
+      }
+
+      &::before {
+        width: 24px;
+        height: 24px;
+        @include laptop-min {
+          border-color: white;
+        }
+      }
+    }
+  }
+  &__btn {
+    padding: 9px !important;
+    width: 100%;
+  }
+}

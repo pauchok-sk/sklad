@@ -50,7 +50,7 @@
     font-size: 13px;
     line-height: 123%;
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     @include hover {
       color: var(--primary);
@@ -77,6 +77,19 @@
     }
     @include laptop-middle {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__btn-more {
+    width: 340px;
+    max-width: 100%;
+    margin: 40px auto 0px auto;
+    padding: 9px 15px !important;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 13px !important;
+      line-height: 123% !important;
+      padding: 7px !important;
     }
   }
 }
