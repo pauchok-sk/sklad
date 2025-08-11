@@ -13,6 +13,7 @@ import headerScroll from "./files/headerScroll.js";
 import select from "./files/select.js";
 import productCard from "./files/productCard.js";
 import inputmask from "./files/inputmask.js";
+import sidebar from "./files/sidebar.js";
 
 spoller();
 burgerTabs();
@@ -28,6 +29,7 @@ headerScroll();
 select();
 productCard();
 inputmask();
+sidebar();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,

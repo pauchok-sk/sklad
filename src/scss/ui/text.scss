@@ -5,7 +5,6 @@
 .text-16 {
   font-size: 16px;
   line-height: 125%;
-  margin: 0;
 }
 .text-13 {
   font-size: 13px;
@@ -61,4 +60,15 @@
 
 .text-green {
   color: var(--green);
+}
+
+@media (min-width: 768px) {
+  .text-md-18 {
+    font-size: 18px;
+    line-height: 133%;
+  }
+  .text-md-16 {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }

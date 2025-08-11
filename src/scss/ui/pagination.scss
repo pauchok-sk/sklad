@@ -1,0 +1,57 @@
+.pagination {
+  @include flex-center;
+  width: 100%;
+  margin-top: 40px;
+  gap: 8px;
+  @include tablet {
+    margin-top: 20px;
+  }
+}
+.pagination-btn {
+  @include flex-center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  color: var(--gray);
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include tablet {
+    gap: 24px;
+
+    &._prev {
+      margin-right: 8px;
+    }
+    &._next {
+      margin-left: 8px;
+    }
+
+    &:nth-child(n+4):nth-child(-n+7) {
+      display: none;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+a.pagination-btn {
+  @include hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  &._active {
+    pointer-events: none;
+    background-color: var(--primary);
+    color: white;
+  }
+}

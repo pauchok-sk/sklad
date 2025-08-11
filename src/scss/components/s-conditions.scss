@@ -122,6 +122,9 @@
       width: 160px;
     }
 
+    @media(min-width: 992px) {
+      display: none !important;
+    }
     &::before {
       position: absolute;
       content: "";

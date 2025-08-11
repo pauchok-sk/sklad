@@ -134,6 +134,17 @@
   @include laptop-min {
     display: none;
   }
+
+  &._primary {
+    background-color: var(--primary);
+    backdrop-filter: blur(0) ;
+
+    .header-nav__list a {
+      @include hover {
+        color: var(--light);
+      }
+    }
+  }
   &__wrapper {
     @include flex-between;
     gap: 20px;

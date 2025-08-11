@@ -21,6 +21,8 @@
 @import "./ui/select";
 @import "./ui/card-product";
 @import "./ui/card-service";
+@import "./ui/filters";
+@import "./ui/pagination";
 
 // widgets
 @import "./widgets/burger";
@@ -45,5 +47,6 @@
 @import "./components/s-rec-services";
 @import "./components/s-content";
 @import "./components/s-connect";
+@import "./components/s-shop";
 
 @import "./components/footer";

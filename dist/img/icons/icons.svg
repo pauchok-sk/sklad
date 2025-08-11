@@ -1,5 +1,9 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 16 16" fill="none" id="icon-arrow-down" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 20 20" fill="none" id="icon-arrow-line-next" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.2441 5.24414C10.5446 4.94389 11.0169 4.92066 11.3438 5.1748L11.4219 5.24414L15.5889 9.41113C15.8891 9.71154 15.9123 10.1839 15.6582 10.5107L15.5889 10.5889L11.4219 14.7559C11.0965 15.0811 10.5695 15.0811 10.2441 14.7559C9.94375 14.4555 9.92064 13.9832 10.1748 13.6562L10.2441 13.5771L12.9873 10.833H4.16602C3.70593 10.8328 3.33301 10.4601 3.33301 10C3.33301 9.53987 3.70593 9.16717 4.16602 9.16699H12.9873L10.2441 6.42285C9.94374 6.12245 9.92062 5.64917 10.1748 5.32227L10.2441 5.24414Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 20 20" fill="none" id="icon-arrow-line-prev" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.82226 5.17475L7.74375 5.24408L3.57709 9.41074C3.27668 9.71115 3.25357 10.1838 3.50776 10.5107L3.57709 10.5893L7.74375 14.7559C8.06919 15.0814 8.59683 15.0814 8.92226 14.7559C9.22267 14.4555 9.24577 13.9828 8.99159 13.6559L8.92226 13.5774L6.17801 10.8325L14.9997 10.8333C15.4599 10.8333 15.833 10.4602 15.833 10C15.833 9.53976 15.4599 9.16667 14.9997 9.16667L6.17967 9.16583L8.92226 6.42259C9.22267 6.12219 9.24577 5.64949 8.99159 5.32258L8.92226 5.24408C8.62186 4.94367 8.14917 4.92057 7.82226 5.17475Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-next" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-prev" xmlns="http://www.w3.org/2000/svg">
@@ -14,6 +18,16 @@
 <path d="M19.9999 19.9999L12 12M12 12L4 4M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-filter" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 4H14M4.66667 8H11.3333M6.66667 12H9.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 40 40" fill="none" id="icon-filters" xmlns="http://www.w3.org/2000/svg">
+<path d="M29 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 12H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 20H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 20H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 28H24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 28H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 26V30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-location" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.33337 6.61523C3.33337 9.84978 6.16302 12.5246 7.4155 13.5501C7.59475 13.6969 7.68545 13.7712 7.81918 13.8088C7.92331 13.8381 8.07657 13.8381 8.1807 13.8088C8.31469 13.7711 8.40475 13.6976 8.58468 13.5502C9.83715 12.5247 12.6667 9.85008 12.6667 6.61553C12.6667 5.39145 12.175 4.21737 11.2998 3.35181C10.4247 2.48626 9.23777 2 8.00009 2C6.76242 2 5.57538 2.48634 4.70021 3.35189C3.82504 4.21744 3.33337 5.39116 3.33337 6.61523Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M6.66671 6C6.66671 6.73638 7.26366 7.33333 8.00004 7.33333C8.73642 7.33333 9.33337 6.73638 9.33337 6C9.33337 5.26362 8.73642 4.66667 8.00004 4.66667C7.26366 4.66667 6.66671 5.26362 6.66671 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

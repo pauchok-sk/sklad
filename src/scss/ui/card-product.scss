@@ -1,12 +1,11 @@
 .card-product {
   position: relative;
-  transition: transform .4s ease;
   @media (min-width: 992px) {
     @include hover {
-      transform: scale(1.06);
       .card-product {
         &__inside {
           box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+          margin: 0 -10px;
         }
         &__wrapper-list {
           max-height: 400px;
@@ -21,6 +20,8 @@
   }
   &__inside {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     right: 0;
@@ -28,8 +29,9 @@
     border-radius: 8px;
     overflow: hidden;
     min-height: 100%;
+    background-color: white;
 
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, margin .3s ease;
     @include tablet {
       padding: 0;
       position: static;
@@ -47,6 +49,9 @@
   }
   &__body {
     background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     @include tablet {
       padding: 0;
@@ -69,6 +74,7 @@
   &__stock {
     @include flex-center;
     gap: 4px;
+    margin-bottom: 20px;
 
     font-size: 13px;
     line-height: 123%;
@@ -76,6 +82,7 @@
     @include tablet {
       font-size: 11px;
       line-height: 127%;
+      margin-bottom: 10px;
     }
 
     svg {
@@ -98,7 +105,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px 0px 10px 0px;
+    padding: 0px 0px 30px 0px;
     li {
       display: flex;
       align-items: flex-end;
@@ -114,9 +121,9 @@
   }
   &__btn {
     width: 100%;
-    margin-top: 20px;
-    @include tablet {
-      margin-top: 10px;
-    }
+    margin-top: auto;
+    // @include tablet {
+    //   margin-top: 10px;
+    // }
   }
 }
