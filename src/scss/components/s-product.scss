@@ -1,0 +1,239 @@
+.s-product {
+  overflow: hidden;
+  &__body {
+    border-radius: 8px;
+    padding: 40px;
+    background-color: white;
+    @include laptop-middle {
+      padding: 25px;
+    }
+    @include tablet-min {
+      padding: 10px;
+    }
+  }
+  &__title {
+    @include tablet {
+      margin-bottom: 20px !important;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    @include laptop-middle {
+      gap: 25px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__img {
+    width: 340px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @include laptop-middle {
+      width: 250px;
+    }
+    @include laptop-min {
+      width: 360px;
+    }
+  }
+  &__info {
+    flex: 1;
+    @include laptop-min {
+      width: 100%;
+      flex: none;
+    }
+  }
+  &__stock {
+    svg {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: flex-end;
+
+      div {
+        border-bottom: 1px dashed var(--black-33);
+        flex: 1;
+      }
+    }
+  }
+  &__content {
+    margin-top: 30px;
+
+    [data-more] {
+      p {
+        transition: opacity 0.4s ease;
+        &:not(:first-child) {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      &._open {
+        p {
+          display: block !important;
+        }
+      }
+    }
+  }
+  &__btn-more {
+    width: fit-content;
+    cursor: pointer;
+    color: var(--primary);
+    transition: opacity 0.3s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+  &__nav {
+    flex: 0 1 240px;
+    @include laptop-min {
+      flex: none;
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    svg {
+      width: 20px;
+      height: 15px;
+      color: var(--primary);
+    }
+  }
+  &__tabs {
+    margin-top: 40px;
+  }
+  &__tabs-nav {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--stroke);
+  }
+  &__tab-btn {
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    color: var(--gray);
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+
+    @include hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    &._active {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    @include tablet {
+      padding: 15px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 123%;
+    }
+  }
+  &__spec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__rec-slider {
+    overflow: visible !important;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+    .swiper-slide {
+      box-sizing: border-box;
+      width: 210px !important;
+
+      .card-product__body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  &__table-head {
+    display: flex;
+    padding: 10px 20px;
+    @include tablet {
+      padding: 10px 5px;
+    }
+
+    div {
+      flex: 1;
+    }
+  }
+  &__table-row {
+    display: flex;
+    padding: 10px 20px;
+    @include tablet {
+      padding: 10px 5px;
+    }
+
+    div {
+      flex: 1;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--gray);
+      }
+    }
+  }
+  &__buttons {
+    @include flex-center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  &__btn {
+    width: 240px;
+    @include tablet-min {
+      width: 100%;
+      font-size: 13px !important;
+      line-height: 123% !important;
+      padding: 7px !important;
+    }
+  }
+}

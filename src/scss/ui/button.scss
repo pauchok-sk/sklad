@@ -28,7 +28,9 @@
     color 0.3s ease,
     background-color 0.3s ease;
   @include hover {
-    opacity: 0.8;
+    background-color: white;
+    border-color: white;
+    color: var(--primary);
   }
 
   &._outline {

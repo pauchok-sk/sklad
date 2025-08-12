@@ -13,7 +13,9 @@
     inset: 0;
     z-index: 80;
 
-    transition: opacity .4s ease, visibility .4s ease;
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s ease;
 
     &._open {
       opacity: 0.5;
@@ -23,8 +25,11 @@
   &__sidebar {
     position: sticky;
     top: 100px;
-    width: 240px;
+    width: 260px;
     flex-shrink: 0;
+    @include desktop-big {
+      width: 240px;
+    }
 
     @include laptop-min {
       width: 500px;
@@ -63,11 +68,18 @@
     }
   }
   &__sidebar-item {
+    [data-bs-target],
+    a {
+      cursor: pointer;
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
   }
   &__item-btn {
     padding: 5px 0px;
     min-height: 52px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -101,6 +113,19 @@
   }
   &__item-body {
     padding: 10px 0px;
+    max-height: 220px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--primary);
+    }
 
     .label-check {
       padding: 10px 0px;
@@ -109,9 +134,10 @@
   &__accordeon-btn {
     display: flex;
     align-items: center;
-    cursor: pointer;
     gap: 10px;
     padding: 10px 0px;
+
+    transition: color 0.3s ease;
 
     &[aria-expanded="true"] {
       svg {
@@ -179,6 +205,13 @@
       width: 100%;
     }
   }
+  &__select-item {
+    flex: 0 1 180px;
+    @include tablet-min {
+      flex: none;
+      width: 100%;
+    }
+  }
   &__main-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -202,6 +235,19 @@
           padding: 20px 10px;
         }
       }
+    }
+  }
+  &__btn-more {
+    padding: 9px !important;
+    width: 340px;
+    max-width: 100%;
+    margin: 20px auto 0px auto;
+
+    @include tablet-min {
+      width: 100%;
+      font-size: 13px !important;
+      line-height: 123% !important;
+      padding: 7px !important;
     }
   }
 }

@@ -17,6 +17,12 @@
   &::placeholder {
     color: var(--light);
   }
+
+  transition: border-color .3s ease;
+
+  &:focus {
+    border-color: var(--gray);
+  }
 }
 textarea.input {
   resize: none;

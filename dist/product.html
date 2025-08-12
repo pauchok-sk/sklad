@@ -1,0 +1,1182 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap&_v=20250812142037" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250812142037" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250812142037" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250812142037" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250812142037" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<div class="header-address d-lg-none">
+		<div class="container">
+			<div class="d-flex align-items-center justify-content-center gap-1">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<div class="text-11">г. Иркутск, ул. Трактовая ст. 3ж/1, офис 5</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-container position-static">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="/" class="header__logo">
+						<img src="img/logo.png" alt="logo" />
+					</a>
+					<div class="header__search-wrapper">
+						<form action="#" class="form-search">
+							<input type="text" placeholder="Поиск" class="form-search__input" />
+							<button class="btn-reset form-search__btn">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="header__address">
+						<div class="text-16">г. Иркутск</div>
+						<div class="text-11 text-light my-1">
+							ул. Трактовая, ст 3ж/1, офис 5
+						</div>
+						<a href="mailto:info@us-fork.ru" class="d-block text-11 text-light">
+							info@us-fork.ru
+						</a>
+					</div>
+					<div class="header__contacts">
+						<div class="d-flex align-items-center gap-3">
+							<a href="tel:+73952788472" class="header__tel">
+								+7 (3952) 78 84 72
+							</a>
+							<a href="#" target="_blank" class="header__social-btn">
+								<img src="img/whats.svg" alt="icon" />
+							</a>
+							<a href="#" target="_blank" class="header__drom">
+								<img src="img/logo-drom.png" alt="logo" />
+							</a>
+						</div>
+						<div class="text-11 text-light mt-1">По будням с 8:00 до 17:00</div>
+					</div>
+					<button class="header__question-btn d-lg-none">Задать вопрос</button>
+					<div class="header__mob-nav d-lg-none">
+						<a href="tel:+73952788472" class="header__mob-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+						</a>
+						<div class="header__mob-btn fixed-search-open">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</div>
+						<div class="header__mob-btn" id="burger-open">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="header-nav _primary">
+			<div class="container">
+				<div class="header-nav__wrapper">
+					<ul class="list header-nav__list">
+						<li><a href="#">Каталог</a></li>
+						<li class="dropdown">
+							<a href="#">Услуги</a>
+							<div class="dropdown__body">
+								<div class="dropdown__body-inside">
+									<ul class="list dropdown__list">
+										<li>
+											<a href="#"><span>Аренда</span></a>
+										</li>
+										<li>
+											<a href="#"><span>Сервисный центр</span></a>
+										</li>
+										<li>
+											<a href="#"><span>Лизинг</span></a>
+										</li>
+										<li>
+											<a href="#"><span>Запрессовка шин</span></a>
+										</li>
+										<li>
+											<a href="#"><span>Выкуп</span></a>
+										</li>
+										<li>
+											<a href="#"><span>Trade-In</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="btn-reset header-nav__btn-stroke">
+						Мне нужна консультация
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-sticky">
+		<div class="container">
+			<div class="header-sticky__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.png" alt="logo" />
+				</a>
+				<ul class="list header-nav__list">
+					<li><a href="#">Каталог</a></li>
+					<li class="dropdown">
+						<a href="#">Услуги</a>
+						<div class="dropdown__body">
+							<div class="dropdown__body-inside">
+								<ul class="list dropdown__list">
+									<li>
+										<a href="#"><span>Аренда</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Сервисный центр</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Лизинг</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Запрессовка шин</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Выкуп</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Trade-In</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header-sticky__search-wrapper">
+					<form action="#" class="form-search">
+						<input type="text" placeholder="Поиск" class="form-search__input" />
+						<button class="btn-reset form-search__btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="header-sticky__search-open">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-search"></use>
+					</svg>
+				</div>
+				<div class="ms-auto d-flex align-items-center gap-3">
+					<a href="#" target="_blank" class="d-none d-xl-block header__social-btn">
+						<img src="img/whats.svg" alt="icon" />
+					</a>
+					<a href="#" target="_blank" class="d-none d-xl-block header__drom">
+						<img src="img/logo-drom.png" alt="logo" />
+					</a>
+					<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="btn-reset header-nav__btn-stroke">
+						Мне нужна консультация
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-search" id="fixed-search">
+		<form action="#" class="fixed-search__form">
+			<input type="text" placeholder="Поиск" class="fixed-search__input" />
+			<button class="btn-reset fixed-search__btn">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-search"></use>
+				</svg>
+			</button>
+		</form>
+		<div class="fixed-search__close" id="fixed-search-close">
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+	</div>
+
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="#" target="_blank" class="burger__social-btn">
+				<img src="img/whats.svg" alt="image" />
+			</a>
+			<a href="#" target="_blank" class="burger__drom">
+				<img src="img/logo-drom.png" alt="logo" />
+			</a>
+			<div class="burger__head-nav">
+				<div class="burger__nav-btn fixed-search-open">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-search"></use>
+					</svg>
+				</div>
+				<div class="burger__nav-btn" id="burger-close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="burger__body">
+			<div class="burger__tab _active" style="opacity: 1" data-burger-tab="main">
+				<ul class="accordion list burger__list">
+					<li data-burger-tab-btn="catalog">
+						<span>
+							<a href="#">Каталог</a>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</span>
+					</li>
+					<li data-bs-toggle="collapse" data-bs-target="#burger-menu-services">
+						<span>
+							<a href="#">Услуги</a>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</span>
+						<div id="burger-menu-services" class="collapse">
+							<ul class="list burger__sublist">
+								<li><a href="#">Аренда</a></li>
+								<li><a href="#">Сервисный центр</a></li>
+								<li><a href="#">Лизинг</a></li>
+								<li><a href="#">Запрессовка шин</a></li>
+								<li><a href="#">Выкуп</a></li>
+								<li><a href="#">Trade-In</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div data-burger-tab="catalog" class="burger__tab">
+				<div class="burger__btn-prev" data-burger-tab-btn="main">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+					</svg>
+					<span>Каталог</span>
+				</div>
+				<ul class="list burger__list _sub gap-0">
+					<li><a href="#">Категория</a></li>
+					<li data-burger-tab-btn="category">
+						<span>
+							<a href="#">Категория</a>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</span>
+					</li>
+					<li><a href="#">Категория</a></li>
+					<li><a href="#">Категория</a></li>
+				</ul>
+			</div>
+			<div data-burger-tab="category" class="burger__tab">
+				<div class="burger__btn-prev" data-burger-tab-btn="catalog">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+					</svg>
+					<span>Категория</span>
+				</div>
+				<ul class="list burger__list _sub gap-0">
+					<li><a href="#">Категория</a></li>
+					<li><a href="#">Категория</a></li>
+					<li><a href="#">Категория</a></li>
+					<li><a href="#">Категория</a></li>
+				</ul>
+			</div>
+			<div class="burger__bottom">
+				<div class="burger__contacts">
+					<svg class="burger__contacts-icon">
+						<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+					</svg>
+					<div>
+						<a href="tel:+73952788472" class="burger__tel">+7 (3952) 78 84 72</a>
+						<div class="text-11 text-light mt-1">По будням с 8:00 до 17:00</div>
+					</div>
+				</div>
+			</div>
+			<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="btn-reset burger__btn-consult">
+				Мне нужна консультация
+			</button>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="s-product bg-light sect-p">
+			<div class="container">
+				<div class="breadcrumbs d-md-flex d-none">
+					<a href="/">Главная</a>
+					<a href="/">Каталог</a>
+					<a href="/">Вилочные погрузчики</a>
+					<span>Вилочный погрузчик HELI CPQD18</span>
+				</div>
+				<div class="s-product__body">
+					<h1 class="s-title s-product__title">Вилочный погрузчик HELI CPQD18</h1>
+					<div class="s-product__wrapper">
+						<img src="img/product-main.jpg" alt="image" class="s-product__img" />
+						<div class="s-product__info">
+							<div class="d-flex text-green align-items-center gap-1 text-13 s-product__stock mb-2">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-check"></use>
+								</svg>
+								<span>В наличии</span>
+							</div>
+							<ul class="list s-product__list">
+								<li class="text-13">
+									<span>Высота подъёма вил, мм:</span>
+									<div></div>
+									<span>4 800</span>
+								</li>
+								<li class="text-13">
+									<span>Тип двигателя:</span>
+									<div></div>
+									<span>бензин</span>
+								</li>
+								<li class="text-13">
+									<span>Длина вил:</span>
+									<div></div>
+									<span>1 150</span>
+								</li>
+								<li class="text-13">
+									<span>Тип шин:</span>
+									<div></div>
+									<span>суперэластик</span>
+								</li>
+							</ul>
+							<div class="s-product__content">
+								<h3 class="text-h3 fw-bold text-oswald">Описание</h3>
+								<div data-more class="text-13">
+									<p>
+										Вилочный погрузчик HELI CPQD18 – это надежное решение для вашего
+										бизнеса, доступное от официального дилера в Иркутской области,
+										Забайкалье и Бурятии. Этот мощный и маневренный погрузчик
+										идеально подходит для работы на складах и в производственных
+										помещениях, обеспечивая высокую производительность и
+										эффективность.
+									</p>
+									<p>
+										Вилочный погрузчик HELI CPQD18 – это надежное решение для вашего
+										бизнеса, доступное от официального дилера в Иркутской области,
+										Забайкалье и Бурятии. Этот мощный и маневренный погрузчик
+										идеально подходит для работы на складах и в производственных
+										помещениях, обеспечивая высокую производительность и
+										эффективность.
+									</p>
+								</div>
+								<div data-more-btn class="text-13 s-product__btn-more">
+									Читать далее
+								</div>
+							</div>
+						</div>
+						<div class="s-product__nav">
+							<p class="text-11 text-gray mb-3">
+								Чтобы узнать точную стоимость, оставьте заявку. После отправки
+								заказа менеджер отправит вам актуальную цену.
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-get-price" class="btn-s w-100">
+								Узнать цену
+							</button>
+							<ul class="list s-product__nav-list">
+								<li class="text-13">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Прямые поставки из Китая</span>
+								</li>
+								<li class="text-13">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Можно купить в лизинг</span>
+								</li>
+								<li class="text-13">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Гарантия 3 года</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="s-product__tabs tabs">
+						<div class="s-product__tabs-nav">
+							<div data-tab-btn="tab-1" class="s-product__tab-btn _active">
+								Характеристики
+							</div>
+							<div data-tab-btn="tab-2" class="s-product__tab-btn">
+								Модельный ряд
+							</div>
+							<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-product__tab-btn">
+								Видеообзор
+							</a>
+						</div>
+						<div data-tab="tab-1" class="_active">
+							<div class="s-product__spec">
+								<div class="s-product__spec-item">
+									<h3 class="text-h3 fw-bold text-gray text-oswald text-uppercase">
+										Основные характеристики
+									</h3>
+									<ul class="list s-product__list">
+										<li class="text-13">
+											<span>Высота подъёма вил, мм:</span>
+											<div></div>
+											<span>4 800</span>
+										</li>
+										<li class="text-13">
+											<span>Тип двигателя:</span>
+											<div></div>
+											<span>бензин</span>
+										</li>
+										<li class="text-13">
+											<span>Длина вил:</span>
+											<div></div>
+											<span>1 150</span>
+										</li>
+										<li class="text-13">
+											<span>Тип шин:</span>
+											<div></div>
+											<span>суперэластик</span>
+										</li>
+										<li class="text-13">
+											<span>Длина вил:</span>
+											<div></div>
+											<span>1 150</span>
+										</li>
+										<li class="text-13">
+											<span>Тип шин:</span>
+											<div></div>
+											<span>суперэластик</span>
+										</li>
+									</ul>
+								</div>
+								<div class="s-product__spec-item">
+									<h3 class="text-h3 fw-bold text-gray text-oswald text-uppercase">
+										Двигатель
+									</h3>
+									<ul class="list s-product__list">
+										<li class="text-13">
+											<span>Высота подъёма вил, мм:</span>
+											<div></div>
+											<span>4 800</span>
+										</li>
+										<li class="text-13">
+											<span>Тип двигателя:</span>
+											<div></div>
+											<span>бензин</span>
+										</li>
+										<li class="text-13">
+											<span>Длина вил:</span>
+											<div></div>
+											<span>1 150</span>
+										</li>
+										<li class="text-13">
+											<span>Тип шин:</span>
+											<div></div>
+											<span>суперэластик</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div data-tab="tab-2">
+							<div class="s-product__table">
+								<div class="s-product__table-head text-gray">
+									<div class="text-md-16 text-13 fw-bold text-uppercase text-oswald">
+										Название модели
+									</div>
+									<div class="text-md-16 text-13 fw-bold text-uppercase text-oswald text-center word-break-all">
+										максимальная грузоподъемность
+									</div>
+									<div class="text-md-16 text-13 fw-bold text-uppercase text-oswald text-center">
+										максимальная высота подъема
+									</div>
+								</div>
+								<div class="s-product__table-row">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+								<div class="s-product__table-row bg-light">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+								<div class="s-product__table-row">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+								<div class="s-product__table-row bg-light">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+								<div class="s-product__table-row">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+								<div class="s-product__table-row bg-light">
+									<div class="text-md-16 text-13 fw-semibold">
+										<a href="#">CPCD10</a>
+									</div>
+									<div class="text-md-16 text-13 text-center">1 000 кг</div>
+									<div class="text-md-16 text-13 text-center">6 000 мм</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-product__buttons">
+						<a href="img/center.jpg" download class="btn-s s-product__btn">Скачать каталог .pdf</a>
+						<button data-bs-toggle="modal" data-bs-target="#modal-get-price" class="btn-s _outline s-product__btn">Узнать цену</button>
+					</div>
+				</div>
+				<div class="sect-m">
+					<h3 class="text-h3 text-uppercase fw-bold text-oswald mb-4">
+						Похожие товары
+					</h3>
+					<div class="swiper s-product__rec-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-product">
+									<div class="card-product__inside">
+										<a href="#">
+											<img src="img/product.jpg" alt="image" class="card-product__img" />
+										</a>
+										<div class="card-product__body">
+											<a href="#" class="card-product__title">
+												Вилочный погрузчик Komatsu FD18T-20
+											</a>
+											<div class="card-product__stock text-green">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#icon-check"></use>
+												</svg>
+												<span>В наличии</span>
+											</div>
+											<div class="card-product__wrapper-list">
+												<ul class="list card-product__list">
+													<li>
+														<span>Высота подъёма вил, мм:</span>
+														<div></div>
+														<span>4 800</span>
+													</li>
+													<li>
+														<span>Тип двигателя:</span>
+														<div></div>
+														<span>бензин</span>
+													</li>
+													<li>
+														<span>Длина вил:</span>
+														<div></div>
+														<span>1 150</span>
+													</li>
+													<li>
+														<span>Тип шин:</span>
+														<div></div>
+														<span>суперэластик</span>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn-s _min card-product__btn">
+												Узнать цену
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-md-flex d-none align-items-center justify-content-center gap-3">
+						<div class="slider-btn _prev">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+							</svg>
+						</div>
+						<div class="slider-pagination"></div>
+						<div class="slider-btn _next">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal fade" id="modal-consult">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<h3 class="text-h3 fw-bold text-uppercase text-primary mb-4 text-oswald">
+					бесплатная консультация
+				</h3>
+				<div class="modal__close close" data-bs-dismiss="modal">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="consult-name" class="label-input text-13 mb-2">Имя</label>
+						<input type="text" placeholder="Иван Иванович Иванов" id="consult-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="consult-tel" class="label-input text-13 mb-2">
+							Телефон
+						</label>
+						<input type="tel" placeholder="+7 (___) ___ __-__" id="consult-tel" class="input" />
+					</div>
+					<input type="checkbox" id="consult-policy" class="input-policy" />
+					<label for="consult-policy" class="text-13 label-policy my-4">
+						<span>
+							Нажимая на кнопку, я соглашаюсь с
+							<a href="#" target="_blank">Условиями использования</a>
+							и
+							<a href="#" target="_blank">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="btn-s w-100">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-get-price">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+					Узнать стоимость
+				</h3>
+				<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+				<div class="modal__close close" data-bs-dismiss="modal">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="get-price-name" class="label-input text-13 mb-2">
+							Имя
+						</label>
+						<input type="text" placeholder="Иван Иванович Иванов" id="get-price-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="get-price-tel" class="label-input text-13 mb-2">
+							Телефон
+						</label>
+						<input type="tel" placeholder="+7 (___) ___ __-__" id="get-price-tel" class="input" />
+					</div>
+					<input type="checkbox" id="get-price-policy" class="input-policy" />
+					<label for="get-price-policy" class="text-13 label-policy my-4">
+						<span>
+							Нажимая на кнопку, я соглашаюсь с
+							<a href="#" target="_blank">Условиями использования</a>
+							и
+							<a href="#" target="_blank">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="btn-s w-100">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-buy">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+					Купить
+				</h3>
+				<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+				<div class="modal__close close" data-bs-dismiss="modal">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="buy-name" class="label-input text-13 mb-2">Имя</label>
+						<input type="text" placeholder="Иван Иванович Иванов" id="buy-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="buy-tel" class="label-input text-13 mb-2">Телефон</label>
+						<input type="tel" placeholder="+7 (___) ___ __-__" id="buy-tel" class="input" />
+					</div>
+					<input type="checkbox" id="buy-policy" class="input-policy" />
+					<label for="buy-policy" class="text-13 label-policy my-4">
+						<span>
+							Нажимая на кнопку, я соглашаюсь с
+							<a href="#" target="_blank">Условиями использования</a>
+							и
+							<a href="#" target="_blank">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="btn-s w-100">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-order">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<h3 class="text-h3 fw-bold text-uppercase text-primary mb-2 text-oswald">
+					оставить заявку
+				</h3>
+				<div class="text-16 fw-bold mb-4">Вилочный погрузчик HELI CPQD18</div>
+				<div class="modal__close close" data-bs-dismiss="modal">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+				<form action="#" class="modal__form">
+					<div class="input-control">
+						<label for="order-name" class="label-input text-13 mb-2">Имя</label>
+						<input type="text" placeholder="Иван Иванович Иванов" id="order-name" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="order-tel" class="label-input text-13 mb-2">
+							Телефон
+						</label>
+						<input type="tel" placeholder="+7 (___) ___ __-__" id="order-tel" class="input" />
+					</div>
+					<div class="input-control">
+						<label for="order-conm" class="label-input text-13 mb-2">
+							Комментарий
+						</label>
+						<textarea id="order-comm" placeholder="Напишите ваш вопрос" rows="4" class="input"></textarea>
+					</div>
+					<input type="file" id="order-file" class="input-file" />
+					<label for="order-file" class="label-file text-13">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-attach"></use>
+						</svg>
+						<span>Прикрепить документ</span>
+					</label>
+					<input type="checkbox" id="order-policy" class="input-policy" />
+					<label for="order-policy" class="text-13 label-policy my-4">
+						<span>
+							Нажимая на кнопку, я соглашаюсь с
+							<a href="#" target="_blank">Условиями использования</a>
+							и
+							<a href="#" target="_blank">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="btn-s w-100">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__main">
+			<div class="container">
+				<div class="footer__main-wrapper">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-2.png" alt="logo" />
+					</a>
+					<ul class="list footer__list">
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="btn-s _outline footer__btn">
+						Мне нужна консультация
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom bg-light">
+			<div class="container">
+				<div class="footer__bottom-wrapper">
+					<div class="text-11">© 2025, Склад.38: Подъем со знанием дела</div>
+					<a href="#" class="text-11 mx-auto d-block">Политика конфиденциальности</a>
+					<a href="https://xn--80adei2bu.xn--p1ai/" target="_blank" class="text-11 d-flex align-items-center gap-1 mx-lg-0 mx-auto ms-lg-auto">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tools"></use>
+						</svg>
+						<span>Разработка сайта – Вангер.рф</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/bootstrap/bootstrap.min.js?_v=20250812142037"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250812142037"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250812142037"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250812142037"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250812142037" type="text/javascript"></script>
+	<script src="js/app.min.js?_v=20250812142037"></script>
+</body>
+
+</html>

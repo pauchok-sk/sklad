@@ -1,5 +1,5 @@
 :root {
-  --content-width: 1180px;
+  --content-width: 1400px;
   --offset-width: 10px;
   --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
 }
@@ -10,6 +10,9 @@
   padding: 0 var(--offset-width);
   margin: 0 auto;
 
+  @include desktop-big {
+    max-width: 1180px;
+  }
   @include laptop {
     max-width: 1140px;
   }

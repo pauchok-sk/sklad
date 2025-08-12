@@ -56,4 +56,25 @@ export default function sliders() {
       },
     });
   }
+
+    const recProductSlider = document.querySelector(".s-product__rec-slider");
+
+  if (recProductSlider) {
+    const swiper = new Swiper(recProductSlider, {
+      speed: 700,
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      autoplay: {
+        delay: 3500,
+      },
+      pagination: {
+        el: ".s-product .slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".s-product .slider-btn._prev",
+        nextEl: ".s-product .slider-btn._next",
+      },
+    });
+  }
 }

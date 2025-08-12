@@ -10,6 +10,7 @@
   background-color: white;
   color: var(--black);
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+  min-height: 105px;
   z-index: 120;
 
   opacity: 0;
@@ -20,6 +21,10 @@
     transform 0.4s ease,
     visibility 0.4s ease,
     opacity 0.4s ease;
+
+  @include tablet-min {
+    min-height: 80px;
+  }
 
   &._open {
     opacity: 1;
@@ -41,7 +46,7 @@
     font-size: 13px;
     line-height: 123%;
     padding: 0;
-  
+
     &::placeholder {
       color: var(--light);
     }
@@ -50,12 +55,12 @@
     @include flex-center;
     width: 32px;
     height: 32px;
-  
+
     transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.7;
     }
-  
+
     svg {
       width: 16px;
       height: 16px;
@@ -66,12 +71,12 @@
     width: 32px;
     height: 32px;
     margin-left: auto;
-  
+
     transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.7;
     }
-  
+
     svg {
       width: 16px;
       height: 16px;

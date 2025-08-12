@@ -14,6 +14,8 @@ import select from "./files/select.js";
 import productCard from "./files/productCard.js";
 import inputmask from "./files/inputmask.js";
 import sidebar from "./files/sidebar.js";
+import formSearchFocus from "./files/formSearchFocus.js";
+import moreText from "./files/moreText.js";
 
 spoller();
 burgerTabs();
@@ -30,6 +32,8 @@ select();
 productCard();
 inputmask();
 sidebar();
+formSearchFocus();
+moreText();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,

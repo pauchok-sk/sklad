@@ -29,77 +29,23 @@
         </div>
         <div class="s-shop__sidebar-item">
           <div class="s-shop__item-btn">
-            <span>Категории</span>
+            <span>Каталог</span>
           </div>
           <div class="s-shop__item-body">
             <div class="s-shop__item-accordeons">
-              <div
-                data-bs-toggle="collapse"
-                data-bs-target="#sidebar-subitem-1"
-                class="s-shop__accordeon-btn text-16"
-              >
+              <a href="#" class="s-shop__accordeon-btn text-16">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
                 </svg>
                 <span>Категория</span>
-              </div>
-              <div class="collapse" id="sidebar-subitem-1">
-                <div class="s-shop__item-body">
-                  <input type="checkbox" id="sub-1" class="input-check" />
-                  <label for="sub-1" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
+              </a>
 
-                  <input type="checkbox" id="sub-2" class="input-check" />
-                  <label for="sub-2" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-
-                  <input type="checkbox" id="sub-3" class="input-check" />
-                  <label for="sub-3" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-
-                  <input type="checkbox" id="sub-4" class="input-check" />
-                  <label for="sub-4" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-                </div>
-              </div>
-
-              <div
-                data-bs-toggle="collapse"
-                data-bs-target="#sidebar-subitem-2"
-                class="s-shop__accordeon-btn text-16"
-              >
+              <a href="#" class="s-shop__accordeon-btn text-16">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
                 </svg>
                 <span>Категория</span>
-              </div>
-              <div class="collapse" id="sidebar-subitem-2">
-                <div class="s-shop__item-body">
-                  <input type="checkbox" id="sub-12" class="input-check" />
-                  <label for="sub-12" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-
-                  <input type="checkbox" id="sub-22" class="input-check" />
-                  <label for="sub-22" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-
-                  <input type="checkbox" id="sub-32" class="input-check" />
-                  <label for="sub-32" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-
-                  <input type="checkbox" id="sub-42" class="input-check" />
-                  <label for="sub-42" class="label-check text-md-16 text-13">
-                    от 1 до 1,9 тонн
-                  </label>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -134,6 +80,21 @@
 
               <input type="checkbox" id="s-4" class="input-check" />
               <label for="s-4" class="label-check text-md-16 text-13">
+                от 1 до 1,9 тонн
+              </label>
+
+              <input type="checkbox" id="s-5" class="input-check" />
+              <label for="s-5" class="label-check text-md-16 text-13">
+                от 1 до 1,9 тонн
+              </label>
+
+              <input type="checkbox" id="s-6" class="input-check" />
+              <label for="s-6" class="label-check text-md-16 text-13">
+                от 1 до 1,9 тонн
+              </label>
+
+              <input type="checkbox" id="s-7" class="input-check" />
+              <label for="s-7" class="label-check text-md-16 text-13">
                 от 1 до 1,9 тонн
               </label>
             </div>
@@ -243,12 +204,14 @@
           </div>
         </div>
         <div class="fast-filters">
-          <a href="#" class="fast-filters__btn _active">
+          <div class="fast-filters__btn _active">
             <span>Быстрый фильтр</span>
-            <svg>
-              <use xlink:href="img/icons/icons.svg#icon-close"></use>
-            </svg>
-          </a>
+            <a href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-close"></use>
+              </svg>
+            </a>
+          </div>
           <a href="#" class="fast-filters__btn">
             <span>Быстрый фильтр</span>
           </a>
@@ -259,37 +222,64 @@
             <span>Быстрый фильтр</span>
           </a>
         </div>
-        <div
-          class="ms-md-auto d-flex align-items-center gap-lg-4 gap-2 flex-wrap"
-        >
-          <div class="text-13">Сортировка:</div>
-          <div class="filters-nav">
-            <a href="#" class="filters-btn _active">
-              <span>По грузоподъемности</span>
-              <svg>
-                <use xlink:href="img/icons/icons.svg#icon-filter"></use>
-              </svg>
-            </a>
-            <a href="#" class="filters-btn">
-              <span>По высоте подъема</span>
-              <svg>
-                <use xlink:href="img/icons/icons.svg#icon-filter"></use>
-              </svg>
-            </a>
+        <div class="filters mt-0">
+          <div class="d-flex align-items-center gap-2">
+            <div class="text-13">Найдено:</div>
+            <div class="text-13 text-gray">186 авто</div>
+          </div>
+
+          <div class="ms-md-auto s-shop__select-item">
+            <div class="select">
+              <input type="text" class="select__input d-none" />
+              <div class="select__btn">
+                <span>Любой</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </div>
+              <div class="select__body">
+                <div class="select__item _active">Любая</div>
+                <div class="select__item">Электрический</div>
+                <div class="select__item">Бензин</div>
+                <div class="select__item">Дизель</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex align-items-center gap-lg-4 gap-2 flex-wrap"
+          >
+            <div class="text-13">Сортировка:</div>
+            <div class="filters-nav">
+              <a href="#" class="filters-btn _active">
+                <span>По грузоподъемности</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-filter"></use>
+                </svg>
+              </a>
+              <a href="#" class="filters-btn">
+                <span>По высоте подъема</span>
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-filter"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <div class="s-shop__main-grid">
           <div class="card-product" style="z-index: 8">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -326,15 +316,17 @@
           </div>
           <div class="card-product" style="z-index: 7">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -371,15 +363,17 @@
           </div>
           <div class="card-product" style="z-index: 6">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -416,15 +410,17 @@
           </div>
           <div class="card-product" style="z-index: 5">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -461,15 +457,17 @@
           </div>
           <div class="card-product" style="z-index: 4">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -506,15 +504,17 @@
           </div>
           <div class="card-product" style="z-index: 3">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -551,15 +551,17 @@
           </div>
           <div class="card-product" style="z-index: 2">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -596,15 +598,17 @@
           </div>
           <div class="card-product" style="z-index: 1">
             <div class="card-product__inside">
-              <img
-                src="@img/product.jpg"
-                alt="image"
-                class="card-product__img"
-              />
+              <a href="#">
+                <img
+                  src="@img/product.jpg"
+                  alt="image"
+                  class="card-product__img"
+                />
+              </a>
               <div class="card-product__body">
-                <h5 class="card-product__title">
+                <a href="#" class="card-product__title">
                   Вилочный погрузчик Komatsu FD18T-20
-                </h5>
+                </a>
                 <div class="card-product__stock text-green">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#icon-check"></use>
@@ -640,6 +644,7 @@
             </div>
           </div>
         </div>
+        <button class="btn-s _outline s-shop__btn-more">Показать ещё</button>
         <div class="pagination">
           <a href="#" class="pagination-btn _prev">
             <svg>

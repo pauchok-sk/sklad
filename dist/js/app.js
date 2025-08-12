@@ -326,6 +326,25 @@
                 }
             });
         }
+        const recProductSlider = document.querySelector(".s-product__rec-slider");
+        if (recProductSlider) {
+            new Swiper(recProductSlider, {
+                speed: 700,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3500
+                },
+                pagination: {
+                    el: ".s-product .slider-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".s-product .slider-btn._prev",
+                    nextEl: ".s-product .slider-btn._next"
+                }
+            });
+        }
     }
     function technicMore() {
         const sect = document.querySelector(".s-technic");
@@ -498,6 +517,31 @@
             }
         }
     }
+    function formSearchFocus() {
+        const forms = document.querySelectorAll(".form-search");
+        if (forms.length) forms.forEach(form => {
+            const input = form.querySelector("input");
+            input.addEventListener("focus", () => {
+                form.classList.add("_focus");
+            });
+            input.addEventListener("blur", () => {
+                form.classList.remove("_focus");
+            });
+        });
+    }
+    function moreText() {
+        const items = document.querySelectorAll("[data-more]");
+        if (items.length) items.forEach(item => {
+            const btn = item.nextElementSibling;
+            btn.addEventListener("click", () => {
+                item.classList.add("_open");
+                setTimeout(() => {
+                    item.querySelectorAll("p").forEach(p => p.style.opacity = 1);
+                }, 10);
+                btn.remove();
+            });
+        });
+    }
     spoller();
     burgerTabs();
     fixedSearch();
@@ -513,6 +557,8 @@
     productCard();
     inputmask();
     sidebar();
+    formSearchFocus();
+    moreText();
     Fancybox.bind("[data-fancybox]", {
         closeButton: true
     });
