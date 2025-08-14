@@ -12,3 +12,20 @@
 .word-break-all {
   word-break: break-all;
 }
+
+.tag {
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--primary);
+
+  width: fit-content;
+  border-radius: 20px;
+  padding: 2px 9px;
+  border: 1px solid var(--primary-33);
+}
+
+@media (min-width: 992px) {
+  .position-lg-static {
+    position: static !important;
+  }
+}

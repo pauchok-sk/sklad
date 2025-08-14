@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-container position-lg-static">
+	<div class="header-container">
 		<header class="header">
 			<div class="container">
 				<div class="header__wrapper">
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="header-nav _primary">
+		<div class="header-nav">
 			<div class="container">
 				<div class="header-nav__wrapper">
 					<ul class="list header-nav__list">
@@ -187,7 +187,27 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="#">О компании</a></li>
+					<li class="dropdown">
+						<a href="#">О компании</a>
+						<div class="dropdown__body">
+							<div class="dropdown__body-inside">
+								<ul class="list dropdown__list">
+									<li>
+										<a href="#"><span>Вакансии</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Отзывы</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Доставка</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Оплата</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -348,19 +368,286 @@
 	</div>
 
 	<main>
-		<section class="s-archive-reviews sect-p bg-light">
+		<section class="intro-simple" style="
+          background: url(&quot;img/intro-bg.jpg&quot;) center / cover
+            no-repeat;
+        ">
 			<div class="container">
-				<h2 class="s-title">Отзывы</h2>
-				<div class="s-archive-reviews__gallery">
-					<a href="img/reviews-image.jpg" data-fancybox class="s-archive-reviews__item">
-						<img src="img/reviews-image.jpg" alt="image">
-					</a>
-					<a href="img/reviews-image.jpg" data-fancybox class="s-archive-reviews__item">
-						<img src="img/reviews-image.jpg" alt="image">
+				<div class="intro-simple__wrapper">
+					<div class="intro-simple__main">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+							<span>О нас</span>
+						</div>
+						<h1 class="text-h1 mb-2 fw-bold text-oswald">
+							О компании
+							<small class="d-block">с 2010 года на рынке техники склада</small>
+						</h1>
+						<p class="intro-simple__content mb-0">Наша специализация - поставка, обслуживание и ремонт техники.</p>
+					</div>
+					<img src="img/intro-simple.png" alt="image" class="intro-simple__img" />
+				</div>
+			</div>
+		</section>
+		<section class="sect-p bg-light s-dealer">
+			<div class="container">
+				<h2 class="s-title text-center">Официальный дилер HELI</h2>
+				<div class="s-dealer__grid">
+					<div class="s-dealer__gallery">
+						<img src="img/map.png" alt="image" />
+					</div>
+					<a href="img/certificate.jpg" data-fancybox class="s-dealer__certificate">
+						<img src="img/certificate.jpg" alt="image" />
 					</a>
 				</div>
 			</div>
 		</section>
+
+		<section class="sect-p s-archive-dealer bg-light">
+			<div class="container">
+				<h2 class="s-title text-center">Официальный дилер HELI</h2>
+				<div class="s-archive-dealer__grid">
+					<div class="s-archive-dealer__gallery">
+						<img src="img/archive-dealer.jpg" alt="image" />
+					</div>
+					<div class="s-archive-dealer__item">
+						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
+							НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ
+						</h3>
+						<ul class="list s-archive-dealer__list">
+							<li>
+								Продажа и обслуживание складской техники (погрузчики; подъёмники;
+								штабелёры; ричтраки; электрические платформенные телеги и
+								электротягачи; подъёмные столы; телеги гидравлические,
+								платформенные, грузовые)
+							</li>
+							<li>
+								Запасные части и расходные материалы (огромный ассортимент на
+								складе)
+							</li>
+							<li>Шины для спецтехники (пневматические, суперэластик)</li>
+							<li>
+								Тяговые аккумуляторные батареи и зарядные устройства для
+								электропогрузчиков
+							</li>
+							<li>
+								Сервисное обслуживание и ремонт спецтехники (выездной и
+								стационарный)
+							</li>
+							<li>Аренда складской техники</li>
+						</ul>
+					</div>
+					<div class="s-archive-dealer__map">
+						<img src="img/dealer-map.jpg" alt="image" />
+					</div>
+					<div class="s-archive-dealer__item _p-md-0">
+						<div class="s-archive-dealer__wrapper-certificate">
+							<a href="img/certificate.jpg" data-fancybox>
+								<img src="img/certificate.jpg" alt="image" />
+							</a>
+						</div>
+					</div>
+					<div class="s-archive-dealer__item">
+						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
+							История компании
+						</h3>
+						<ul class="list s-archive-dealer__history-list">
+							<li>
+								<div class="s-archive-dealer__history-num">2010</div>
+								<span class="text-16">
+									Открыта компания по продаже запасных частей и шин для вилочных
+									погрузчиков.
+								</span>
+							</li>
+							<li>
+								<div class="s-archive-dealer__history-num">2012</div>
+								<span class="text-16">
+									Официальные дилеры по вилочным погрузчикам и складской технике
+									HELI (Китай).
+								</span>
+							</li>
+							<li>
+								<div class="s-archive-dealer__history-num">2013</div>
+								<span class="text-16">
+									Открыт Сервисный центр по обслуживанию вилочных погрузчиков и
+									складской техники.
+								</span>
+							</li>
+							<li>
+								<div class="s-archive-dealer__history-num">2014</div>
+								<span class="text-16">
+									Открыто направление по аренде вилочных погрузчиков и складской
+									технике.
+								</span>
+							</li>
+							<li>
+								<div class="s-archive-dealer__history-num">2024</div>
+								<span class="text-16">
+									Почти 15 лет Компания работает, поставляя и обслуживая вилочные
+									погрузчики на предприятия Иркутской области, Республики Бурятия,
+									Забайкальского Края
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div class="s-archive-dealer__item">
+						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
+							Вакансии
+						</h3>
+						<div class="s-archive-dealer__jobs">
+							<div class="s-archive-dealer__job-item">
+								<div class="text-16 fw-bold mb-2">Автоэлектрик</div>
+								<p class="text-16 mb-3">по ремонту вилочных погрузчиков / минипогрузчиков / внутрискладской техники</p>
+								<a href="#" class="btn-s _outline s-archive-dealer__job-btn">Подробнее</a>
+							</div>
+							<div class="s-archive-dealer__job-item">
+								<div class="text-16 fw-bold mb-2">Слесарь</div>
+								<p class="text-16 mb-3">выездной службы по ремонту вилочных погрузчиков / минипогрузчиков / внутрискладской техники</p>
+								<a href="#" class="btn-s _outline s-archive-dealer__job-btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sect-p s-connect text-white" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) left 0 top 0 / cover
+      no-repeat;
+  ">
+			<div class="container">
+				<div class="s-connect__main">
+					<h2 class="s-title mb-2 text-md-start text-center">Нет времени выбирать? отправьте нам заявку!</h2>
+					<p class="s-connect__content text-md-start text-center">
+						Наш менеджер свяжется с вами и подберет технику под ваши потребности
+					</p>
+					<form action="#" class="s-connect__form">
+						<div class="input-control mb-2">
+							<input type="text" placeholder="Ваше имя" class="input" />
+						</div>
+						<div class="input-control mb-2">
+							<input type="tel" placeholder="Ваш номер телефона" class="input" />
+						</div>
+						<div class="input-control">
+							<textarea placeholder="Комментарий" rows="3" class="input"></textarea>
+						</div>
+						<input type="file" id="connect-file" class="input-file" />
+						<label for="connect-file" class="label-file text-13 py-2 my-2 _white">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-attach"></use>
+							</svg>
+							<span>Загрузить ТЗ (не обязательно)</span>
+						</label>
+						<button class="btn-s _outline-white s-connect__btn">
+							Отправить заявку
+						</button>
+						<input type="checkbox" checked id="connect-policy" class="input-policy" />
+						<label for="connect-policy" class="text-11 label-policy mt-3 _white">
+							<span>
+								Нажимая на кнопку, вы соглашаетесь с нашей
+								<a href="#" target="_blank">Политикой Конфиденциальности</a>
+							</span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-contacts sect-p bg-light">
+			<div class="container tabs">
+				<h2 class="s-title text-center">контакты</h2>
+				<div class="s-contacts__body">
+					<div class="s-contacts__nav">
+						<div data-tab-btn="tab-1" class="s-contacts__nav-btn _active">
+							Иркутск
+						</div>
+						<div data-tab-btn="tab-2" class="s-contacts__nav-btn">Улан-Удэ</div>
+						<div data-tab-btn="tab-3" class="s-contacts__nav-btn">Чита</div>
+					</div>
+					<div data-tab="tab-1" class="flex-fill _active">
+						<div class="s-contacts__body-main">
+							<div class="d-flex justify-content-between gap-3 mb-2">
+								<h3 class="text-h3 text-primary fw-bold text-oswald m-0">
+									Шоурум в Иркутске
+								</h3>
+								<a href="img/logo-drom.png" download="" class="btn-s _min d-md-block d-none">
+									Скачать реквизиты
+								</a>
+							</div>
+							<div class="text-16 mb-2">
+								Адрес: 664024, г. Иркутск, ул. Трактовая, ст 3ж/1, офис 5
+							</div>
+							<div class="d-flex align-items-center gap-1 mb-2">
+								<div class="text-16">Телефон:</div>
+								<a href="tel:+73952788472" class="text-16">+7 (3952) 78-84-72</a>
+							</div>
+							<div class="d-flex align-items-center gap-1">
+								<div class="text-16">Email: </div>
+								<a href="mailto:info@us-fork.ru" class="text-16">info@us-fork.ru</a>
+							</div>
+							<a href="img/logo-drom.png" download="" class="btn-s _min d-md-none mt-3">
+								Скачать реквизиты
+							</a>
+							<div class="s-contacts__map map" data-icon="img/location-map.svg" data-center="[52.31729257184874,104.24735949999989]" data-zoom="17"></div>
+						</div>
+					</div>
+					<div data-tab="tab-2" class="flex-fill">
+						<div class="s-contacts__body-main">
+							<div class="d-flex justify-content-between gap-3 mb-2">
+								<h3 class="text-h3 text-primary fw-bold text-oswald m-0">
+									Шоурум в Улан-Удэ
+								</h3>
+								<a href="img/logo-drom.png" download="" class="btn-s _min d-md-block d-none">
+									Скачать реквизиты
+								</a>
+							</div>
+							<div class="text-16 mb-2">
+								Адрес: 664024, г. Иркутск, ул. Трактовая, ст 3ж/1, офис 5
+							</div>
+							<div class="d-flex align-items-center gap-1 mb-2">
+								<div class="text-16">Телефон:</div>
+								<a href="tel:+73952788472" class="text-16">+7 (3952) 78-84-72</a>
+							</div>
+							<div class="d-flex align-items-center gap-1">
+								<div class="text-16">Email: </div>
+								<a href="mailto:info@us-fork.ru" class="text-16">info@us-fork.ru</a>
+							</div>
+							<a href="img/logo-drom.png" download="" class="btn-s _min d-md-none mt-3">
+								Скачать реквизиты
+							</a>
+							<div class="s-contacts__map map" data-icon="img/location-map.svg" data-center="[52.31729257184874,104.24735949999989]" data-zoom="17"></div>
+						</div>
+					</div>
+					<div data-tab="tab-3" class="flex-fill">
+						<div class="s-contacts__body-main">
+							<div class="d-flex justify-content-between gap-3 mb-2">
+								<h3 class="text-h3 text-primary fw-bold text-oswald m-0">
+									Шоурум в Чите
+								</h3>
+								<a href="img/logo-drom.png" download="" class="btn-s _min d-md-block d-none">
+									Скачать реквизиты
+								</a>
+							</div>
+							<div class="text-16 mb-2">
+								Адрес: 664024, г. Иркутск, ул. Трактовая, ст 3ж/1, офис 5
+							</div>
+							<div class="d-flex align-items-center gap-1 mb-2">
+								<div class="text-16">Телефон:</div>
+								<a href="tel:+73952788472" class="text-16">+7 (3952) 78-84-72</a>
+							</div>
+							<div class="d-flex align-items-center gap-1">
+								<div class="text-16">Email: </div>
+								<a href="mailto:info@us-fork.ru" class="text-16">info@us-fork.ru</a>
+							</div>
+							<a href="img/logo-drom.png" download="" class="btn-s _min d-md-none mt-3">
+								Скачать реквизиты
+							</a>
+							<div class="s-contacts__map map" data-icon="img/location-map.svg" data-center="[52.31729257184874,104.24735949999989]" data-zoom="17"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 	<div class="modal fade" id="modal-consult">
 		<div class="modal-dialog modal-dialog-centered">
@@ -566,6 +853,7 @@
 	<script src="./files/fancybox/fancybox.min.js?_v=20250814135438"></script>
 	<script src="./files/inputmask/inputmask.min.js?_v=20250814135438"></script>
 
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250814135438" type="text/javascript"></script>
 	<script src="js/app.min.js?_v=20250814135438"></script>
 </body>
 

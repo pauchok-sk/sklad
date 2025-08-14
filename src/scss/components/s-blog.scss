@@ -1,0 +1,53 @@
+.s-blog {
+  @include tablet {
+    overflow: hidden;
+  }
+  &__categories {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    @include tablet {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin: 0 -10px;
+      padding: 0 10px;
+    }
+
+    .btn-s {
+      @include tablet {
+        flex-shrink: 0;
+      }
+      &._active {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__btn-more {
+    width: 340px;
+    max-width: 100%;
+    margin: 40px auto 0px auto;
+    padding: 9px !important;
+    @include tablet-min {
+      font-size: 13px !important;
+      line-height: 123% !important;
+      padding: 7px !important; 
+      width: 100%;
+    }
+  }
+}

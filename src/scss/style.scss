@@ -23,6 +23,7 @@
 @import "./ui/card-service";
 @import "./ui/filters";
 @import "./ui/pagination";
+@import "./ui/card-blog";
 
 // widgets
 @import "./widgets/burger";
@@ -51,5 +52,10 @@
 @import "./components/s-product";
 @import "./components/s-archive-dealer";
 @import "./components/s-archive-reviews";
+@import "./components/s-jobs";
+@import "./components/s-delivery";
+@import "./components/s-pay";
+@import "./components/s-blog";
+@import "./components/s-article";
 
 @import "./components/footer";

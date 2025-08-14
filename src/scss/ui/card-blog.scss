@@ -1,0 +1,38 @@
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  @include hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    aspect-ratio: 1/0.8;
+    margin-bottom: 20px;
+  }
+  &__tag {
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--primary);
+    margin-bottom: 15px;
+
+    width: fit-content;
+    border-radius: 20px;
+    padding: 2px 9px;
+    border: 1px solid var(--primary-33);
+  }
+  &__title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary);
+  }
+  &__descr {
+    margin-bottom: 15px;
+  }
+}
