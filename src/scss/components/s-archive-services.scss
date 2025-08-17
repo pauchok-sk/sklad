@@ -1,0 +1,19 @@
+.s-archive-services {
+  &__wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    @include laptop-min {
+      grid-template-rows: auto;
+      .s-conditions__slide {
+        grid-column: 1 span !important;
+        grid-row: 1 span !important;
+        width: auto !important;
+      }
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;      
+    }
+  }
+}

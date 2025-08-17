@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-container">
+	<div class="header-container position-lg-static">
 		<header class="header">
 			<div class="container">
 				<div class="header__wrapper">
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="header-nav">
+		<div class="header-nav _primary">
 			<div class="container">
 				<div class="header-nav__wrapper">
 					<ul class="list header-nav__list">
@@ -187,27 +187,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown">
-						<a href="#">О компании</a>
-						<div class="dropdown__body">
-							<div class="dropdown__body-inside">
-								<ul class="list dropdown__list">
-									<li>
-										<a href="#"><span>Вакансии</span></a>
-									</li>
-									<li>
-										<a href="#"><span>Отзывы</span></a>
-									</li>
-									<li>
-										<a href="#"><span>Доставка</span></a>
-									</li>
-									<li>
-										<a href="#"><span>Оплата</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
+					<li><a href="#">О компании</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -368,129 +348,102 @@
 	</div>
 
 	<main>
-		<section class="intro-simple" style="
-          background: url(&quot;img/intro-bg.jpg&quot;) center / cover
-            no-repeat;
-        ">
+		<section class="sect-p bg-light s-archive-services">
 			<div class="container">
-				<div class="intro-simple__wrapper">
-					<div class="intro-simple__main">
-						<div class="breadcrumbs">
-							<a href="/">Главная</a>
-							<span>О нас</span>
-						</div>
-						<h1 class="text-h1 mb-2 fw-bold text-oswald">
-							О компании
-							<small class="d-block">с 2010 года на рынке техники склада</small>
-						</h1>
-						<p class="intro-simple__content mb-0">Наша специализация - поставка, обслуживание и ремонт техники.</p>
-					</div>
-					<img src="img/intro-simple.png" alt="image" class="intro-simple__img" />
+				<div class="breadcrumbs">
+					<a href="/">Главная</a>
+					<span>Услуги</span>
 				</div>
-			</div>
-		</section>
-		<section class="sect-p s-archive-dealer bg-light">
-			<div class="container">
-				<h2 class="s-title text-center">Официальный дилер HELI</h2>
-				<div class="s-archive-dealer__grid">
-					<div class="s-archive-dealer__gallery">
-						<img src="img/archive-dealer.jpg" alt="image" />
-					</div>
-					<div class="s-archive-dealer__item">
-						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
-							НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ
-						</h3>
-						<ul class="list s-archive-dealer__list">
-							<li>
-								Продажа и обслуживание складской техники (погрузчики; подъёмники;
-								штабелёры; ричтраки; электрические платформенные телеги и
-								электротягачи; подъёмные столы; телеги гидравлические,
-								платформенные, грузовые)
-							</li>
-							<li>
-								Запасные части и расходные материалы (огромный ассортимент на
-								складе)
-							</li>
-							<li>Шины для спецтехники (пневматические, суперэластик)</li>
-							<li>
-								Тяговые аккумуляторные батареи и зарядные устройства для
-								электропогрузчиков
-							</li>
-							<li>
-								Сервисное обслуживание и ремонт спецтехники (выездной и
-								стационарный)
-							</li>
-							<li>Аренда складской техники</li>
-						</ul>
-					</div>
-					<div class="s-archive-dealer__map">
-						<img src="img/dealer-map.jpg" alt="image" />
-					</div>
-					<div class="s-archive-dealer__item _p-md-0">
-						<div class="s-archive-dealer__wrapper-certificate">
-							<a href="img/certificate.jpg" data-fancybox>
-								<img src="img/certificate.jpg" alt="image" />
+				<h2 class="s-title text-center text-md-start">Услуги</h2>
+				<div class="s-archive-services__wrapper">
+					<div class="s-conditions__slide">
+						<img src="img/conditions-1.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Аренда
 							</a>
+							<p class="text-16 my-3">
+								Возьмите погрузчик в аренду
+								<br />
+								сроком от недели до 3 лет
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-get-price" class="btn-reset s-conditions__slide-btn">
+								Узнайте условия аренды
+							</button>
 						</div>
 					</div>
-					<div class="s-archive-dealer__item">
-						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
-							История компании
-						</h3>
-						<ul class="list s-archive-dealer__history-list">
-							<li>
-								<div class="s-archive-dealer__history-num">2010</div>
-								<span class="text-16">
-									Открыта компания по продаже запасных частей и шин для вилочных
-									погрузчиков.
-								</span>
-							</li>
-							<li>
-								<div class="s-archive-dealer__history-num">2012</div>
-								<span class="text-16">
-									Официальные дилеры по вилочным погрузчикам и складской технике
-									HELI (Китай).
-								</span>
-							</li>
-							<li>
-								<div class="s-archive-dealer__history-num">2013</div>
-								<span class="text-16">
-									Открыт Сервисный центр по обслуживанию вилочных погрузчиков и
-									складской техники.
-								</span>
-							</li>
-							<li>
-								<div class="s-archive-dealer__history-num">2014</div>
-								<span class="text-16">
-									Открыто направление по аренде вилочных погрузчиков и складской
-									технике.
-								</span>
-							</li>
-							<li>
-								<div class="s-archive-dealer__history-num">2024</div>
-								<span class="text-16">
-									Почти 15 лет Компания работает, поставляя и обслуживая вилочные
-									погрузчики на предприятия Иркутской области, Республики Бурятия,
-									Забайкальского Края
-								</span>
-							</li>
-						</ul>
+					<div class="s-conditions__slide">
+						<img src="img/conditions-2.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Лизинг
+							</a>
+							<p class="text-16 my-3">
+								Первоначальный взнос 10% Положительное решение за 15 минут
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-order" class="btn-reset s-conditions__slide-btn">
+								Подайте заявку
+							</button>
+						</div>
 					</div>
-					<div class="s-archive-dealer__item">
-						<h3 class="text-h3 text-uppercase text-oswald fw-bold mb-3">
-							Вакансии
-						</h3>
-						<div class="s-archive-dealer__jobs">
-							<div class="s-archive-dealer__job-item">
-								<div class="text-16 fw-bold mb-2">Автоэлектрик</div>
-								<p class="text-16 mb-3">по ремонту вилочных погрузчиков / минипогрузчиков / внутрискладской техники</p>
-								<a href="#" class="btn-s _outline s-archive-dealer__job-btn">Подробнее</a>
-							</div>
-							<div class="s-archive-dealer__job-item">
-								<div class="text-16 fw-bold mb-2">Слесарь</div>
-								<p class="text-16 mb-3">выездной службы по ремонту вилочных погрузчиков / минипогрузчиков / внутрискладской техники</p>
-								<a href="#" class="btn-s _outline s-archive-dealer__job-btn">Подробнее</a>
-							</div>
+					<div class="s-conditions__slide">
+						<img src="img/conditions-3.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Trade-In
+							</a>
+							<p class="text-16 my-3">
+								Получите новый погрузчик HELI с гарантией вместо вашего
+								старого
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-order" class="btn-reset s-conditions__slide-btn">
+								Подайте заявку
+							</button>
+						</div>
+					</div>
+					<div class="s-conditions__slide">
+						<img src="img/conditions-1.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Аренда
+							</a>
+							<p class="text-16 my-3">
+								Возьмите погрузчик в аренду
+								<br />
+								сроком от недели до 3 лет
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-get-price" class="btn-reset s-conditions__slide-btn">
+								Узнайте условия аренды
+							</button>
+						</div>
+					</div>
+					<div class="s-conditions__slide">
+						<img src="img/conditions-2.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Лизинг
+							</a>
+							<p class="text-16 my-3">
+								Первоначальный взнос 10% Положительное решение за 15 минут
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-order" class="btn-reset s-conditions__slide-btn">
+								Подайте заявку
+							</button>
+						</div>
+					</div>
+					<div class="s-conditions__slide">
+						<img src="img/conditions-3.jpg" alt="image" class="s-conditions__slide-img" />
+						<div class="s-conditions__slide-body">
+							<a href="#" class="text-primary big-link py-2 d-block s-conditions__slide-title">
+								Trade-In
+							</a>
+							<p class="text-16 my-3">
+								Получите новый погрузчик HELI с гарантией вместо вашего
+								старого
+							</p>
+							<button data-bs-toggle="modal" data-bs-target="#modal-order" class="btn-reset s-conditions__slide-btn">
+								Подайте заявку
+							</button>
 						</div>
 					</div>
 				</div>

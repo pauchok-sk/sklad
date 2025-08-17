@@ -1448,6 +1448,7 @@ a.pagination-btn._active {
 }
 .intro__slide {
   color: #fff;
+  height: auto!important;
   padding: 95px 0 35px 0!important;
   box-sizing: border-box
 }
@@ -1512,19 +1513,16 @@ a.pagination-btn._active {
   border-radius: 8px;
   padding: 40px 20px 40px 40px
 }
-.s-conditions__slide:first-child {
-  grid-area: 1/1/3/2;
+.s-conditions__slide:first-child,
+.s-conditions__slide:nth-child(3n+1) {
+  grid-column: 1 span;
+  grid-row: 2 span;
   flex-direction: column;
   align-items: center
 }
-.s-conditions__slide:first-child .s-conditions__slide-img {
+.s-conditions__slide:first-child .s-conditions__slide-img,
+.s-conditions__slide:nth-child(3n+1) .s-conditions__slide-img {
   width: 300px
-}
-.s-conditions__slide:nth-child(2) {
-  grid-area: 1/2/2/3
-}
-.s-conditions__slide:nth-child(3) {
-  grid-area: 2/2/3/3
 }
 .s-conditions__slide-img {
   display: block;
@@ -2363,6 +2361,12 @@ a.pagination-btn._active {
   flex-direction: column;
   gap: 20px
 }
+.s-archive-services__wrapper {
+  display: grid!important;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px
+}
 .footer__main {
   padding: 38px 0
 }
@@ -2773,6 +2777,14 @@ a.pagination-btn._active {
   .s-article__rec {
     display: none
   }
+  .s-archive-services__wrapper {
+    grid-template-rows: auto
+  }
+  .s-archive-services__wrapper .s-conditions__slide {
+    grid-column: 1 span!important;
+    grid-row: 1 span!important;
+    width: auto!important
+  }
   .footer__main-wrapper {
     justify-content: start;
     flex-wrap: wrap
@@ -3073,6 +3085,9 @@ a.pagination-btn._active {
   }
   .s-article__img {
     min-height: 240px
+  }
+  .s-archive-services__wrapper {
+    grid-template-columns: 1fr
   }
   .footer__list {
     padding-left: 20px;

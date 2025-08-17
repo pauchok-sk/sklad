@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header-primary.html')
+    <main>
+      <section class="sect-p bg-light s-archive-services">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <span>Услуги</span>
+          </div>
+          <h2 class="s-title text-center text-md-start">Услуги</h2>
+          <div class="s-archive-services__wrapper">
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-1.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Аренда
+                </a>
+                <p class="text-16 my-3">
+                  Возьмите погрузчик в аренду
+                  <br />
+                  сроком от недели до 3 лет
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-get-price"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Узнайте условия аренды
+                </button>
+              </div>
+            </div>
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-2.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Лизинг
+                </a>
+                <p class="text-16 my-3">
+                  Первоначальный взнос 10% Положительное решение за 15 минут
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-order"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Подайте заявку
+                </button>
+              </div>
+            </div>
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-3.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Trade-In
+                </a>
+                <p class="text-16 my-3">
+                  Получите новый погрузчик HELI с гарантией вместо вашего
+                  старого
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-order"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Подайте заявку
+                </button>
+              </div>
+            </div>
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-1.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Аренда
+                </a>
+                <p class="text-16 my-3">
+                  Возьмите погрузчик в аренду
+                  <br />
+                  сроком от недели до 3 лет
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-get-price"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Узнайте условия аренды
+                </button>
+              </div>
+            </div>
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-2.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Лизинг
+                </a>
+                <p class="text-16 my-3">
+                  Первоначальный взнос 10% Положительное решение за 15 минут
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-order"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Подайте заявку
+                </button>
+              </div>
+            </div>
+            <div class="s-conditions__slide">
+              <img
+                src="@img/conditions-3.jpg"
+                alt="image"
+                class="s-conditions__slide-img"
+              />
+              <div class="s-conditions__slide-body">
+                <a
+                  href="#"
+                  class="text-primary big-link py-2 d-block s-conditions__slide-title"
+                >
+                  Trade-In
+                </a>
+                <p class="text-16 my-3">
+                  Получите новый погрузчик HELI с гарантией вместо вашего
+                  старого
+                </p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-order"
+                  class="btn-reset s-conditions__slide-btn"
+                >
+                  Подайте заявку
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-connect.html')
+      @@include('html/components/s-contacts.html')
+    </main>
+    @@include('html/components/footer.html')
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
