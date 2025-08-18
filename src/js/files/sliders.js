@@ -11,6 +11,7 @@ export default function sliders() {
         el: ".intro__slider-pagination",
         clickable: true,
       },
+      autoHeight: true,
     });
 
     introSlider.addEventListener("mouseenter", () => {
