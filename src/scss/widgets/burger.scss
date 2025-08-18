@@ -103,10 +103,8 @@
           }
         }
 
-        &[aria-expanded="true"] {
-          svg {
+        &[aria-expanded="true"] > span > svg {
             transform: rotate(90deg);
-          }
         }
 
         svg {
@@ -139,6 +137,9 @@
 
     a {
       padding-left: 18px;
+    }
+    [data-bs-toggle="collapse"] {
+      padding-left: 18px !important;
     }
   }
   &__btn-prev {

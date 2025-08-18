@@ -8,11 +8,11 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap&_v=20250817232347" rel="stylesheet" />
-	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250817232347" />
-	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250817232347" />
-	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250817232347" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250817232347" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap&_v=20250818130520" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/bootstrap/bootstrap.min.css?_v=20250818130520" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250818130520" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250818130520" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250818130520" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -32,7 +32,7 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="/" class="header__logo">
-						<img src="img/logo.png" alt="logo" />
+						<img src="img/logo.svg" alt="logo" />
 					</a>
 					<div class="header__search-wrapper">
 						<form action="#" class="form-search">
@@ -67,7 +67,9 @@
 						</div>
 						<div class="text-11 text-light mt-1">По будням с 8:00 до 17:00</div>
 					</div>
-					<button class="header__question-btn d-lg-none">Задать вопрос</button>
+					<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="header__question-btn d-lg-none">
+						Задать вопрос
+					</button>
 					<div class="header__mob-nav d-lg-none">
 						<a href="tel:+73952788472" class="header__mob-btn">
 							<svg>
@@ -156,7 +158,7 @@
 		<div class="container">
 			<div class="header-sticky__wrapper">
 				<a href="/" class="header__logo">
-					<img src="img/logo.png" alt="logo" />
+					<img src="img/logo.svg" alt="logo" />
 				</a>
 				<ul class="list header-nav__list">
 					<li><a href="#">Каталог</a></li>
@@ -261,13 +263,38 @@
 		<div class="burger__body">
 			<div class="burger__tab _active" style="opacity: 1" data-burger-tab="main">
 				<ul class="accordion list burger__list">
-					<li data-burger-tab-btn="catalog">
+					<li data-bs-toggle="collapse" data-bs-target="#burger-menu-catalog">
 						<span>
 							<a href="#">Каталог</a>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
 							</svg>
 						</span>
+						<div id="burger-menu-catalog" class="collapse">
+							<ul class="list burger__sublist">
+								<li><a href="#">Категория</a></li>
+								<li><a href="#">Категория</a></li>
+								<li><a href="#">Категория</a></li>
+								<li data-bs-toggle="collapse" data-bs-target="#burger-menu-catalog-sub-1">
+									<span>
+										<a href="#">Каталог</a>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+										</svg>
+									</span>
+									<div id="burger-menu-catalog-sub-1" class="collapse">
+										<ul class="list burger__sublist">
+											<li><a href="#">Категория</a></li>
+											<li><a href="#">Категория</a></li>
+											<li><a href="#">Категория</a></li>
+											<li><a href="#">Категория</a></li>
+											<li><a href="#">Категория</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">Категория</a></li>
+							</ul>
+						</div>
 					</li>
 					<li data-bs-toggle="collapse" data-bs-target="#burger-menu-services">
 						<span>
@@ -293,41 +320,6 @@
 					<li>
 						<a href="#">Контакты</a>
 					</li>
-				</ul>
-			</div>
-			<div data-burger-tab="catalog" class="burger__tab">
-				<div class="burger__btn-prev" data-burger-tab-btn="main">
-					<svg>
-						<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
-					</svg>
-					<span>Каталог</span>
-				</div>
-				<ul class="list burger__list _sub gap-0">
-					<li><a href="#">Категория</a></li>
-					<li data-burger-tab-btn="category">
-						<span>
-							<a href="#">Категория</a>
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
-							</svg>
-						</span>
-					</li>
-					<li><a href="#">Категория</a></li>
-					<li><a href="#">Категория</a></li>
-				</ul>
-			</div>
-			<div data-burger-tab="category" class="burger__tab">
-				<div class="burger__btn-prev" data-burger-tab-btn="catalog">
-					<svg>
-						<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
-					</svg>
-					<span>Категория</span>
-				</div>
-				<ul class="list burger__list _sub gap-0">
-					<li><a href="#">Категория</a></li>
-					<li><a href="#">Категория</a></li>
-					<li><a href="#">Категория</a></li>
-					<li><a href="#">Категория</a></li>
 				</ul>
 			</div>
 			<div class="burger__bottom">
@@ -561,12 +553,12 @@
 		</div>
 	</footer>
 
-	<script src="./files/bootstrap/bootstrap.min.js?_v=20250817232347"></script>
-	<script src="./files/swiper/swiper.min.js?_v=20250817232347"></script>
-	<script src="./files/fancybox/fancybox.min.js?_v=20250817232347"></script>
-	<script src="./files/inputmask/inputmask.min.js?_v=20250817232347"></script>
+	<script src="./files/bootstrap/bootstrap.min.js?_v=20250818130520"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250818130520"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250818130520"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250818130520"></script>
 
-	<script src="js/app.min.js?_v=20250817232347"></script>
+	<script src="js/app.min.js?_v=20250818130520"></script>
 </body>
 
 </html>

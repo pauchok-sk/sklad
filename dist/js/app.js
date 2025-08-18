@@ -275,7 +275,7 @@
     function sliders() {
         const introSlider = document.querySelector(".intro__slider");
         if (introSlider) {
-            new Swiper(introSlider, {
+            const swiper = new Swiper(introSlider, {
                 speed: 700,
                 autoplay: {
                     delay: 3500
@@ -284,6 +284,12 @@
                     el: ".intro__slider-pagination",
                     clickable: true
                 }
+            });
+            introSlider.addEventListener("mouseenter", () => {
+                swiper.autoplay.stop();
+            });
+            introSlider.addEventListener("mouseleave", () => {
+                swiper.autoplay.start();
             });
         }
         const conditionsSlider = document.querySelector(".s-conditions__slider");
@@ -294,10 +300,6 @@
                 spaceBetween: 20,
                 autoplay: {
                     delay: 3200
-                },
-                pagination: {
-                    el: ".intro__slider-pagination",
-                    clickable: true
                 }
             });
         }

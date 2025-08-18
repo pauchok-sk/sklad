@@ -3,6 +3,12 @@
   padding: 20px;
   background-color: white;
   color: var(--black);
+  &__gallery {
+    transition: opacity .3s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+  }
   &__img {
     width: 100%;
     aspect-ratio: 1/0.8;

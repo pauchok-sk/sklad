@@ -28,9 +28,9 @@
     color 0.3s ease,
     background-color 0.3s ease;
   @include hover {
-    background-color: white;
-    border-color: white;
-    color: var(--primary);
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: white;
   }
 
   &._outline {

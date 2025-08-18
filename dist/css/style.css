@@ -152,6 +152,7 @@ template {
   --light: #959595;
   --stroke: #dadada;
   --primary: #ba0105;
+  --primary-hover: #da0609;
   --gray: #4a4c53;
   --green: #64a844;
   --primary-33: rgba(186, 1, 5, 0.33);
@@ -774,6 +775,9 @@ textarea.input {
   background-color: #fff;
   color: var(--black)
 }
+.card-service__gallery {
+  transition: opacity .3s ease
+}
 .card-service__img {
   width: 100%;
   aspect-ratio: 1/.8;
@@ -1026,8 +1030,8 @@ a.pagination-btn._active {
   width: -moz-fit-content;
   width: fit-content
 }
-.burger__list li[data-bs-toggle=collapse][aria-expanded=true] svg,
-.burger__list li[data-burger-tab-btn][aria-expanded=true] svg {
+.burger__list li[data-bs-toggle=collapse][aria-expanded=true]>span>svg,
+.burger__list li[data-burger-tab-btn][aria-expanded=true]>span>svg {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg)
 }
@@ -1054,6 +1058,9 @@ a.pagination-btn._active {
 }
 .burger__sublist a {
   padding-left: 18px
+}
+.burger__sublist [data-bs-toggle=collapse] {
+  padding-left: 18px!important
 }
 .burger__btn-prev {
   display: flex;
@@ -1328,6 +1335,7 @@ a.pagination-btn._active {
 }
 .header__drom {
   flex-shrink: 0;
+  width: 85px;
   transition: opacity .2s ease
 }
 .header__question-btn {
@@ -1523,6 +1531,9 @@ a.pagination-btn._active {
 .s-conditions__slide:first-child .s-conditions__slide-img,
 .s-conditions__slide:nth-child(3n+1) .s-conditions__slide-img {
   width: 300px
+}
+.s-conditions__slide-gallery {
+  transition: opacity .3s ease
 }
 .s-conditions__slide-img {
   display: block;
@@ -2345,6 +2356,9 @@ a.pagination-btn._active {
 .s-article__head-content p:last-child {
   margin-bottom: 0
 }
+.s-article__content {
+  line-height: 135%
+}
 .s-article__content * {
   margin-bottom: 10px!important
 }
@@ -2720,7 +2734,8 @@ a.pagination-btn._active {
     visibility: hidden;
     transition: visibility .4s ease,opacity .4s ease,-webkit-transform .4s ease;
     transition: transform .4s ease,visibility .4s ease,opacity .4s ease;
-    transition: transform .4s ease,visibility .4s ease,opacity .4s ease,-webkit-transform .4s ease
+    transition: transform .4s ease,visibility .4s ease,opacity .4s ease,-webkit-transform .4s ease;
+    z-index: 100
   }
   .s-shop__sidebar._open {
     opacity: 1;
@@ -3129,9 +3144,9 @@ a.pagination-btn._active {
 }
 @media (any-hover:hover) {
   .btn-s:hover {
-    background-color: #fff;
-    border-color: #fff;
-    color: var(--primary)
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #fff
   }
   .btn-s._outline:hover {
     background-color: var(--primary);
@@ -3190,6 +3205,9 @@ a.pagination-btn._active {
     opacity: .7
   }
   .card-product__title:hover {
+    opacity: .7
+  }
+  .card-service__gallery:hover {
     opacity: .7
   }
   .card-service__title:hover {
@@ -3271,6 +3289,9 @@ a.pagination-btn._active {
   .header-sticky__search-open:hover {
     color: var(--primary)
   }
+  .s-conditions__slide-gallery:hover {
+    opacity: .7
+  }
   .s-conditions__slide-title:hover {
     color: var(--black)!important;
     border-color: var(--black)
@@ -3335,9 +3356,9 @@ a.pagination-btn._active {
 }
 @media (hover:none) {
   .btn-s:active {
-    background-color: #fff;
-    border-color: #fff;
-    color: var(--primary)
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #fff
   }
   .btn-s._outline:active {
     background-color: var(--primary);
@@ -3396,6 +3417,9 @@ a.pagination-btn._active {
     opacity: .7
   }
   .card-product__title:active {
+    opacity: .7
+  }
+  .card-service__gallery:active {
     opacity: .7
   }
   .card-service__title:active {
@@ -3476,6 +3500,9 @@ a.pagination-btn._active {
   }
   .header-sticky__search-open:active {
     color: var(--primary)
+  }
+  .s-conditions__slide-gallery:active {
+    opacity: .7
   }
   .s-conditions__slide-title:active {
     color: var(--black)!important;

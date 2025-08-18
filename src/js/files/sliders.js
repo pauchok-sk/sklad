@@ -12,6 +12,14 @@ export default function sliders() {
         clickable: true,
       },
     });
+
+    introSlider.addEventListener("mouseenter", () => {
+      swiper.autoplay.stop();
+    });
+
+    introSlider.addEventListener("mouseleave", () => {
+      swiper.autoplay.start();
+    });
   }
 
   const conditionsSlider = document.querySelector(".s-conditions__slider");
@@ -23,10 +31,6 @@ export default function sliders() {
       spaceBetween: 20,
       autoplay: {
         delay: 3200,
-      },
-      pagination: {
-        el: ".intro__slider-pagination",
-        clickable: true,
       },
     });
   }
@@ -57,7 +61,7 @@ export default function sliders() {
     });
   }
 
-    const recProductSlider = document.querySelector(".s-product__rec-slider");
+  const recProductSlider = document.querySelector(".s-product__rec-slider");
 
   if (recProductSlider) {
     const swiper = new Swiper(recProductSlider, {

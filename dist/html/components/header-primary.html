@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="header__wrapper">
 				<a href="/" class="header__logo">
-					<img src="img/logo.png" alt="logo" />
+					<img src="img/logo.svg" alt="logo" />
 				</a>
 				<div class="header__search-wrapper">
 					<form action="#" class="form-search">
@@ -48,7 +48,9 @@
 					</div>
 					<div class="text-11 text-light mt-1">По будням с 8:00 до 17:00</div>
 				</div>
-				<button class="header__question-btn d-lg-none">Задать вопрос</button>
+				<button data-bs-toggle="modal" data-bs-target="#modal-consult" class="header__question-btn d-lg-none">
+					Задать вопрос
+				</button>
 				<div class="header__mob-nav d-lg-none">
 					<a href="tel:+73952788472" class="header__mob-btn">
 						<svg>
@@ -137,7 +139,7 @@
 	<div class="container">
 		<div class="header-sticky__wrapper">
 			<a href="/" class="header__logo">
-				<img src="img/logo.png" alt="logo" />
+				<img src="img/logo.svg" alt="logo" />
 			</a>
 			<ul class="list header-nav__list">
 				<li><a href="#">Каталог</a></li>
@@ -242,13 +244,38 @@
 	<div class="burger__body">
 		<div class="burger__tab _active" style="opacity: 1" data-burger-tab="main">
 			<ul class="accordion list burger__list">
-				<li data-burger-tab-btn="catalog">
+				<li data-bs-toggle="collapse" data-bs-target="#burger-menu-catalog">
 					<span>
 						<a href="#">Каталог</a>
 						<svg>
 							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
 						</svg>
 					</span>
+					<div id="burger-menu-catalog" class="collapse">
+						<ul class="list burger__sublist">
+							<li><a href="#">Категория</a></li>
+							<li><a href="#">Категория</a></li>
+							<li><a href="#">Категория</a></li>
+							<li data-bs-toggle="collapse" data-bs-target="#burger-menu-catalog-sub-1">
+								<span>
+									<a href="#">Каталог</a>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</span>
+								<div id="burger-menu-catalog-sub-1" class="collapse">
+									<ul class="list burger__sublist">
+										<li><a href="#">Категория</a></li>
+										<li><a href="#">Категория</a></li>
+										<li><a href="#">Категория</a></li>
+										<li><a href="#">Категория</a></li>
+										<li><a href="#">Категория</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Категория</a></li>
+						</ul>
+					</div>
 				</li>
 				<li data-bs-toggle="collapse" data-bs-target="#burger-menu-services">
 					<span>
@@ -274,41 +301,6 @@
 				<li>
 					<a href="#">Контакты</a>
 				</li>
-			</ul>
-		</div>
-		<div data-burger-tab="catalog" class="burger__tab">
-			<div class="burger__btn-prev" data-burger-tab-btn="main">
-				<svg>
-					<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
-				</svg>
-				<span>Каталог</span>
-			</div>
-			<ul class="list burger__list _sub gap-0">
-				<li><a href="#">Категория</a></li>
-				<li data-burger-tab-btn="category">
-					<span>
-						<a href="#">Категория</a>
-						<svg>
-							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
-						</svg>
-					</span>
-				</li>
-				<li><a href="#">Категория</a></li>
-				<li><a href="#">Категория</a></li>
-			</ul>
-		</div>
-		<div data-burger-tab="category" class="burger__tab">
-			<div class="burger__btn-prev" data-burger-tab-btn="catalog">
-				<svg>
-					<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
-				</svg>
-				<span>Категория</span>
-			</div>
-			<ul class="list burger__list _sub gap-0">
-				<li><a href="#">Категория</a></li>
-				<li><a href="#">Категория</a></li>
-				<li><a href="#">Категория</a></li>
-				<li><a href="#">Категория</a></li>
 			</ul>
 		</div>
 		<div class="burger__bottom">
