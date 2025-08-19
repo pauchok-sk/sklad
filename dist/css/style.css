@@ -3045,8 +3045,18 @@ a.pagination-btn._active {
   .header__logo {
     width: 40px
   }
+  .intro__slide {
+    height: calc(100vh - 80px)!important;
+    padding: 0!important;
+    z-index: 1;
+    position: relative
+  }
   .intro__slide-wrapper {
-    flex: none
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 30px 0 85px 0!important
   }
   .intro__slide-list {
     grid-template-columns: 1fr
@@ -3055,6 +3065,10 @@ a.pagination-btn._active {
     width: 100%
   }
   .intro__slide-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
     margin-top: 20px
   }
   .s-center__btn {
