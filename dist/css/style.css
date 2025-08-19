@@ -3045,11 +3045,17 @@ a.pagination-btn._active {
   .header__logo {
     width: 40px
   }
+  .intro__slide-wrapper {
+    flex: none
+  }
   .intro__slide-list {
     grid-template-columns: 1fr
   }
   .intro__slide-btn {
     width: 100%
+  }
+  .intro__slide-img {
+    margin-top: 20px
   }
   .s-center__btn {
     width: 100%

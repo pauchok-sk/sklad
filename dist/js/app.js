@@ -283,8 +283,7 @@
                 pagination: {
                     el: ".intro__slider-pagination",
                     clickable: true
-                },
-                autoHeight: true
+                }
             });
             introSlider.addEventListener("mouseenter", () => {
                 swiper.autoplay.stop();
