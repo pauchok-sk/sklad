@@ -16,6 +16,7 @@ import inputmask from "./files/inputmask.js";
 import sidebar from "./files/sidebar.js";
 import formSearchFocus from "./files/formSearchFocus.js";
 import moreText from "./files/moreText.js";
+import introHeight from "./files/introHeight.js";
 
 spoller();
 burgerTabs();
@@ -34,6 +35,7 @@ inputmask();
 sidebar();
 formSearchFocus();
 moreText();
+introHeight();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,

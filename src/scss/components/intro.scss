@@ -7,7 +7,7 @@
   }
   &__slide {
     color: white;
-    height: auto !important;
+    // height: auto !important;
     padding: 95px 0px 35px 0px !important;
     box-sizing: border-box;
     @include laptop-min {
@@ -20,8 +20,11 @@
         height: 100%;
       }
     }
+    @media (min-width: 576px) {
+      height: auto !important;
+    }
     @include tablet-min {
-      height: calc(100vh - 80px) !important;
+      // height: calc(100vh - 80px) !important;
       padding: 0 !important;
       z-index: 1;
       position: relative;

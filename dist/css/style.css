@@ -1456,7 +1456,6 @@ a.pagination-btn._active {
 }
 .intro__slide {
   color: #fff;
-  height: auto!important;
   padding: 95px 0 35px 0!important;
   box-sizing: border-box
 }
@@ -2430,6 +2429,11 @@ a.pagination-btn._active {
   width: 20px;
   height: 16px
 }
+@media (min-width:576px) {
+  .intro__slide {
+    height: auto!important
+  }
+}
 @media (min-width:768px) {
   .text-md-18 {
     font-size: 18px;
@@ -3046,7 +3050,6 @@ a.pagination-btn._active {
     width: 40px
   }
   .intro__slide {
-    height: calc(100vh - 80px)!important;
     padding: 0!important;
     z-index: 1;
     position: relative
